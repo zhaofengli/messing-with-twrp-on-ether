@@ -1,0 +1,102 @@
+18:55:19.959744 getuid()                = 1000
+18:55:19.960057 writev(3<socket:[11756]>, [{"\0\225\1\227\307\262\1E\24139", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"qseecom listener service threads starting!!! \0", 46}], 4) = 69
+18:55:19.960412 getuid()                = 1000
+18:55:19.960544 writev(4</dev/pmsg0>, [{"lL\0\350\3\225\1", 7}, {"\0\225\1\227\307\262\1E\24139", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"qseecom listener service threads starting!!! \0", 46}], 5) = 76
+18:55:19.960983 getuid()                = 1000
+18:55:19.961233 writev(3<socket:[11756]>, [{"\0\225\1\227\307\262\1h\366F9", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Total listener services to start = 7\0", 37}], 4) = 60
+18:55:19.961492 getuid()                = 1000
+18:55:19.961619 writev(4</dev/pmsg0>, [{"lC\0\350\3\225\1", 7}, {"\0\225\1\227\307\262\1h\366F9", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Total listener services to start = 7\0", 37}], 5) = 67
+18:55:19.961985 getuid()                = 1000
+18:55:19.962105 writev(3<socket:[11756]>, [{"\0\225\1\227\307\262\1\263RV9", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 0, hierarchy = 1\0", 35}], 4) = 58
+18:55:19.962388 getuid()                = 1000
+18:55:19.962507 writev(4</dev/pmsg0>, [{"lA\0\350\3\225\1", 7}, {"\0\225\1\227\307\262\1\263RV9", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 0, hierarchy = 1\0", 35}], 5) = 65
+18:55:19.962875 mprotect(0x7f79a02000, 4096, PROT_READ|PROT_WRITE) = 0
+18:55:19.963012 mprotect(0x7f799e2000, 4096, PROT_READ|PROT_WRITE) = 0
+18:55:19.963138 mprotect(0x7f79a05000, 4096, PROT_READ|PROT_WRITE) = 0
+18:55:19.963262 mprotect(0x7f79a26000, 4096, PROT_READ|PROT_WRITE) = 0
+18:55:19.963544 mprotect(0x7f79a02000, 4096, PROT_READ) = 0
+18:55:19.963668 mprotect(0x7f799e2000, 4096, PROT_READ) = 0
+18:55:19.963791 mprotect(0x7f79a05000, 4096, PROT_READ) = 0
+18:55:19.963913 mprotect(0x7f79a26000, 4096, PROT_READ) = 0
+18:55:19.964063 getuid()                = 1000
+18:55:19.964183 writev(3<socket:[11756]>, [{"\0\225\1\227\307\262\1\325\vv9", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(librpmb.so, RTLD_NOW) succeeds\0", 43}], 4) = 66
+18:55:19.964521 getuid()                = 1000
+18:55:19.964640 writev(4</dev/pmsg0>, [{"lI\0\350\3\225\1", 7}, {"\0\225\1\227\307\262\1\325\vv9", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(librpmb.so, RTLD_NOW) succeeds\0", 43}], 5) = 73
+18:55:19.965003 getuid()                = 1000
+18:55:19.965122 writev(3<socket:[11756]>, [{"\0\225\1\227\307\262\1|b\2049", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init::Init dlsym(g_FSHandle rpmb_start) succeeds\0", 49}], 4) = 72
+18:55:19.965404 getuid()                = 1000
+18:55:19.965524 writev(4</dev/pmsg0>, [{"lO\0\350\3\225\1", 7}, {"\0\225\1\227\307\262\1|b\2049", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init::Init dlsym(g_FSHandle rpmb_start) succeeds\0", 49}], 5) = 79
+18:55:19.965885 getuid()                = 1000
+18:55:19.966004 writev(3<socket:[11756]>, [{"\0\225\1\227\307\262\1\177\326\2219", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_register_listener 8192 sb_length = 0x5000\n\0", 51}], 4) = 76
+18:55:19.966232 getuid()                = 1000
+18:55:19.966353 writev(4</dev/pmsg0>, [{"lS\0\350\3\225\1", 7}, {"\0\225\1\227\307\262\1\177\326\2219", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_register_listener 8192 sb_length = 0x5000\n\0", 51}], 5) = 83
+18:55:19.966715 openat(AT_FDCWD, "/dev/qseecom", O_RDWR) = 7</dev/qseecom>
+18:55:19.966995 ioctl(7</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x0a, 0x04), 0x7ffa0dcc78) = 0
+18:55:19.967171 openat(AT_FDCWD, "/dev/ion", O_RDONLY) = 8</dev/ion>
+18:55:19.967461 ioctl(8</dev/ion>, ION_IOC_ALLOC, 0x7ffa0dcbf0) = 0
+18:55:19.968350 ioctl(8</dev/ion>, ION_IOC_MAP, 0x7ffa0dcbe8) = 0
+18:55:19.968589 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_SHARED, 10<anon_inode:dmabuf>, 0) = 0x7f799fb000
+18:55:19.968860 ioctl(7</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x01, 0x18), 0x7ffa0dcc88) = 0
+18:55:19.969108 mmap(NULL, 1036288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f79419000
+18:55:19.969251 mprotect(0x7f79419000, 4096, PROT_NONE) = 0
+18:55:19.969399 prctl(0x53564d41 /* PR_??? */, 0, 0x7f79419000, 4096, "thread stack guard page") = 0
+18:55:19.969605 clone(child_stack=0x7f79515440, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f79515460, tls=0x7f795154e8, child_tidptr=0x7f79515460) = 406
+18:55:19.970095 futex(0x7f795154d0, FUTEX_WAKE_PRIVATE, 1) = 1
+18:55:19.970290 getuid()                = 1000
+18:55:19.970421 writev(3<socket:[11756]>, [{"\0\225\1\227\307\262\1\240\373\3249", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init rpmb_start ret = 0\0", 24}], 4) = 47
+18:55:19.970884 getuid()                = 1000
+18:55:19.971079 writev(4</dev/pmsg0>, [{"l6\0\350\3\225\1", 7}, {"\0\225\1\227\307\262\1\240\373\3249", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init rpmb_start ret = 0\0", 24}], 5) = 54
+18:55:19.971703 getuid()                = 1000
+18:55:19.971844 writev(3<socket:[11756]>, [{"\0\225\1\227\307\262\1\320\211\3529", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"RPMB system services: Started (Listener ID = 8192)\0", 51}], 4) = 74
+18:55:19.972288 getuid()                = 1000
+18:55:19.972430 writev(4</dev/pmsg0>, [{"lQ\0\350\3\225\1", 7}, {"\0\225\1\227\307\262\1\320\211\3529", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"RPMB system services: Started (Listener ID = 8192)\0", 51}], 5) = 81
+18:55:19.972897 getuid()                = 1000
+18:55:19.973035 writev(3<socket:[11756]>, [{"\0\225\1\227\307\262\1\263\314\3749", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 1, hierarchy = 1\0", 35}], 4) = 58
+18:55:19.973466 getuid()                = 1000
+18:55:19.973605 writev(4</dev/pmsg0>, [{"lA\0\350\3\225\1", 7}, {"\0\225\1\227\307\262\1\263\314\3749", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 1, hierarchy = 1\0", 35}], 5) = 65
+18:55:19.974044 mprotect(0x7f79a02000, 4096, PROT_READ|PROT_WRITE) = 0
+18:55:19.974199 mprotect(0x7f799e2000, 4096, PROT_READ|PROT_WRITE) = 0
+18:55:19.974330 mprotect(0x7f79a05000, 4096, PROT_READ|PROT_WRITE) = 0
+18:55:19.974461 mprotect(0x7f79a26000, 4096, PROT_READ|PROT_WRITE) = 0
+18:55:19.974656 mprotect(0x7f79a02000, 4096, PROT_READ) = 0
+18:55:19.974786 mprotect(0x7f799e2000, 4096, PROT_READ) = 0
+18:55:19.974912 mprotect(0x7f79a05000, 4096, PROT_READ) = 0
+18:55:19.975038 mprotect(0x7f79a26000, 4096, PROT_READ) = 0
+18:55:19.975189 getuid()                = 1000
+18:55:19.975316 writev(3<socket:[11756]>, [{"\0\225\1\227\307\262\1E\315\37:", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(libssd.so, RTLD_NOW) succeeds\0", 42}], 4) = 65
+18:55:19.975800 getuid()                = 1000
+18:55:19.976490 writev(4</dev/pmsg0>, [{"lH\0\350\3\225\1", 7}, {"\0\225\1\227\307\262\1E\315\37:", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(libssd.so, RTLD_NOW) succeeds\0", 42}], 5) = 72
+18:55:19.977090 getuid()                = 1000
+18:55:19.977219 writev(3<socket:[11756]>, [{"\0\225\1\227\307\262\1\17\306<:", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init::Init dlsym(g_FSHandle ssd_start) succeeds\0", 48}], 4) = 71
+18:55:19.977593 getuid()                = 1000
+18:55:19.977715 writev(4</dev/pmsg0>, [{"lN\0\350\3\225\1", 7}, {"\0\225\1\227\307\262\1\17\306<:", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init::Init dlsym(g_FSHandle ssd_start) succeeds\0", 48}], 5) = 78
+18:55:19.978071 getuid()                = 1000
+18:55:19.978193 writev(3<socket:[11756]>, [{"\0\225\1\227\307\262\1\0\307K:", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_register_listener 12288 sb_length = 0x5000\n\0", 52}], 4) = 77
+18:55:19.978486 getuid()                = 1000
+18:55:19.978607 writev(4</dev/pmsg0>, [{"lT\0\350\3\225\1", 7}, {"\0\225\1\227\307\262\1\0\307K:", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_register_listener 12288 sb_length = 0x5000\n\0", 52}], 5) = 84
+18:55:19.978949 openat(AT_FDCWD, "/dev/qseecom", O_RDWR) = 11</dev/qseecom>
+18:55:19.979244 ioctl(11</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x0a, 0x04), 0x7ffa0dcc78) = 0
+18:55:19.979426 openat(AT_FDCWD, "/dev/ion", O_RDONLY) = 12</dev/ion>
+18:55:19.979746 ioctl(12</dev/ion>, ION_IOC_ALLOC, 0x7ffa0dcbf0) = 0
+18:55:19.980591 ioctl(12</dev/ion>, ION_IOC_MAP, 0x7ffa0dcbe8) = 0
+18:55:19.980936 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_SHARED, 13<anon_inode:dmabuf>, 0) = 0x7f799ed000
+18:55:19.981256 ioctl(11</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x01, 0x18), 0x7ffa0dcc88) = 0
+18:55:19.981506 mmap(NULL, 1036288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f78f03000
+18:55:19.981657 mprotect(0x7f78f03000, 4096, PROT_NONE) = 0
+18:55:19.981798 prctl(0x53564d41 /* PR_??? */, 0, 0x7f78f03000, 4096, "thread stack guard page") = 0
+18:55:19.982024 clone(child_stack=0x7f78fff440, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f78fff460, tls=0x7f78fff4e8, child_tidptr=0x7f78fff460) = 407
+18:55:19.982456 futex(0x7f78fff4d0, FUTEX_WAKE_PRIVATE, 1) = 0
+18:55:19.982611 getuid()                = 1000
+18:55:19.982750 writev(3<socket:[11756]>, [{"\0\225\1\227\307\262\1l3\221:", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init ssd_start ret = 0\0", 23}], 4) = 46
+18:55:19.983785 getuid()                = 1000
+18:55:19.984649 writev(4</dev/pmsg0>, [{"l5\0\350\3\225\1", 7}, {"\0\225\1\227\307\262\1l3\221:", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init ssd_start ret = 0\0", 23}], 5) = 53
+18:55:19.985197 getuid()                = 1000
+18:55:19.985547 writev(3<socket:[11756]>, [{"\0\225\1\227\307\262\1SU\270:", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"SSD system services: Started (Listener ID = 12288)\0", 51}], 4) = 74
+18:55:19.985894 getuid()                = 1000
+18:55:19.986017 writev(4</dev/pmsg0>, [{"lQ\0\350\3\225\1", 7}, {"\0\225\1\227\307\262\1SU\270:", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"SSD system services: Started (Listener ID = 12288)\0", 51}], 5) = 81
+18:55:19.986371 getuid()                = 1000
+18:55:19.986493 writev(3<socket:[11756]>, [{"\0\225\1\227\307\262\1\20l\312:", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 2, hierarchy = 1\0", 35}], 4) = 58
+18:55:19.986781 getuid()                = 1000
+18:55:19.986906 writev(4</dev/pmsg0>, [{"lA\0\350\3\225\1", 7}, {"\0\225\1\227\307\262\1\20l\312:", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 2, hierarchy = 1\0", 35}], 5) = 65
+18:55:19.987243 mprotect(0x7f79a02000, 4096, PROT_READ|PROT_WRITE) = 0
+18:55:19.987385 mprotect(0x7f799e2000, 4096, PROT_READ|PROT_WRITE <detached ...>

@@ -1,0 +1,20 @@
+18:55:15.322401 setsid()                = 401
+18:55:15.322610 dup3(4</dev/null>, 0</dev/graphics/fb0>, 0) = 0</dev/null>
+18:55:15.322983 dup3(4</dev/null>, 1<pipe:[9879]>, 0) = 1</dev/null>
+18:55:15.323249 dup3(4</dev/null>, 2</tmp/recovery.log>, 0) = 2</dev/null>
+18:55:15.323509 close(4</dev/null>)     = 0
+18:55:15.323686 nanosleep({1, 0}, 0x7fdb10afa8) = 0
+18:55:16.324119 kill(399, SIG_0)        = 0
+18:55:16.324285 nanosleep({1, 0}, 0x7fdb10afa8) = 0
+18:55:17.324714 kill(399, SIG_0)        = 0
+18:55:17.324879 nanosleep({1, 0}, 0x7fdb10afa8) = 0
+18:55:18.325321 kill(399, SIG_0)        = 0
+18:55:18.326105 nanosleep({1, 0}, 0x7fdb10afa8) = 0
+18:55:19.326795 kill(399, SIG_0)        = -1 ESRCH (No such process)
+18:55:19.326986 mprotect(0x7f9f785000, 4096, PROT_READ|PROT_WRITE) = 0
+18:55:19.327127 mprotect(0x7f9f785000, 4096, PROT_READ) = 0
+18:55:19.327280 mprotect(0x7f9f785000, 4096, PROT_READ|PROT_WRITE) = 0
+18:55:19.327411 mprotect(0x7f9f785000, 4096, PROT_READ) = 0
+18:55:19.327596 munmap(0x7f9f785000, 4096) = 0
+18:55:19.327792 exit_group(0)           = ?
+18:55:19.329822 +++ exited with 0 +++

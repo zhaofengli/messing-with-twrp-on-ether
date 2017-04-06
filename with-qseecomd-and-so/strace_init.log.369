@@ -1,0 +1,11 @@
+18:55:08.546837 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f86c8d000
+18:55:08.547159 mprotect(0x7f86c8d000, 4096, PROT_NONE) = 0
+18:55:08.547291 sigaltstack({ss_sp=0x7f86c8e000, ss_flags=0, ss_size=16384}, NULL) = 0
+18:55:08.547441 prctl(0x53564d41 /* PR_??? */, 0, 0x7f86c8e000, 16384, "thread signal stack") = 0
+18:55:08.547721 prctl(0x53564d41 /* PR_??? */, 0, 0x7f86c8d000, 4096, "thread signal stack guard page") = 0
+18:55:08.547884 ioctl(7</dev/qseecom>, _IOC(0, 0x97, 0x05, 0x00), 0x5000) = 0
+18:55:18.432383 ioctl(5</dev/block/mmcblk0rpmb>, _IOC(_IOC_READ|_IOC_WRITE, 0xb3, 0x00, 0xd8), 0x7f867ad268) = 0
+18:55:18.437603 ioctl(5</dev/block/mmcblk0rpmb>, _IOC(_IOC_READ|_IOC_WRITE, 0xb3, 0x00, 0xd8), 0x7f867ad268) = 0
+18:55:18.439433 ioctl(7</dev/qseecom>, _IOC(0, 0x97, 0x06, 0x00), 0x10) = 0
+18:55:18.439727 ioctl(7</dev/qseecom>, _IOC(0, 0x97, 0x05, 0x00) <unfinished ...>
+18:55:19.539794 +++ killed by SIGKILL +++

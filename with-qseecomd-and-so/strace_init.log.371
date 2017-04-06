@@ -1,0 +1,166 @@
+18:55:08.602637 futex(0x7f861024d0, FUTEX_WAIT_BITSET_PRIVATE, 2, NULL, ffffffff) = 0
+18:55:08.602923 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f86c73000
+18:55:08.603073 mprotect(0x7f86c73000, 4096, PROT_NONE) = 0
+18:55:08.603289 sigaltstack({ss_sp=0x7f86c74000, ss_flags=0, ss_size=16384}, NULL) = 0
+18:55:08.603460 prctl(0x53564d41 /* PR_??? */, 0, 0x7f86c74000, 16384, "thread signal stack") = 0
+18:55:08.603608 prctl(0x53564d41 /* PR_??? */, 0, 0x7f86c73000, 4096, "thread signal stack guard page") = 0
+18:55:08.603959 getuid()                = 1000
+18:55:08.604099 writev(3<socket:[11655]>, [{"\0s\1\214\307\262\1\355\214\376#", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: dispatch\0", 29}], 4) = 52
+18:55:08.604543 getuid()                = 1000
+18:55:08.604892 writev(4</dev/pmsg0>, [{"l;\0\350\3p\1", 7}, {"\0s\1\214\307\262\1\355\214\376#", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: dispatch\0", 29}], 5) = 59
+18:55:08.605290 getuid()                = 1000
+18:55:08.605557 writev(3<socket:[11655]>, [{"\0s\1\214\307\262\1p\314\22$", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"before calling ioctl to read the next time_cmd\0", 47}], 4) = 70
+18:55:08.605779 getuid()                = 1000
+18:55:08.606008 writev(4</dev/pmsg0>, [{"lM\0\350\3p\1", 7}, {"\0s\1\214\307\262\1p\314\22$", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"before calling ioctl to read the next time_cmd\0", 47}], 5) = 77
+18:55:08.606329 ioctl(14</dev/qseecom>, _IOC(0, 0x97, 0x05, 0x00), 0x4e48) = 0
+18:55:12.454578 getuid()                = 1000
+18:55:12.454723 writev(3<socket:[11655]>, [{"\0s\1\220\307\262\1\332\323\27\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"got the req here! ret=0\0", 24}], 4) = 47
+18:55:12.455129 getuid()                = 1000
+18:55:12.455261 writev(4</dev/pmsg0>, [{"l6\0\350\3p\1", 7}, {"\0s\1\220\307\262\1\332\323\27\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"got the req here! ret=0\0", 24}], 5) = 54
+18:55:12.455622 getuid()                = 1000
+18:55:12.455753 writev(3<socket:[11655]>, [{"\0s\1\220\307\262\1-\327'\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"command id, time_cmd_id = 770\0", 30}], 4) = 53
+18:55:12.456055 getuid()                = 1000
+18:55:12.456181 writev(4</dev/pmsg0>, [{"l<\0\350\3p\1", 7}, {"\0s\1\220\307\262\1-\327'\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"command id, time_cmd_id = 770\0", 30}], 5) = 60
+18:55:12.456526 getuid()                = 1000
+18:55:12.456653 writev(3<socket:[11655]>, [{"\0s\1\220\307\262\1\17\2425\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"time_getutcsec starts!\0", 23}], 4) = 46
+18:55:12.456932 getuid()                = 1000
+18:55:12.457056 writev(4</dev/pmsg0>, [{"l5\0\350\3p\1", 7}, {"\0s\1\220\307\262\1\17\2425\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"time_getutcsec starts!\0", 23}], 5) = 53
+18:55:12.457380 getuid()                = 1000
+18:55:12.457506 writev(3<socket:[11655]>, [{"\0s\1\220\307\262\1\326\251B\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: time_getutcsec\0", 35}], 4) = 58
+18:55:12.457779 getuid()                = 1000
+18:55:12.457905 writev(4</dev/pmsg0>, [{"lA\0\350\3p\1", 7}, {"\0s\1\220\307\262\1\326\251B\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: time_getutcsec\0", 35}], 5) = 65
+18:55:12.458226 getuid()                = 1000
+18:55:12.458352 writev(3<socket:[11655]>, [{"\0s\1\220\307\262\1L\223O\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: get_utc_seconds\0", 36}], 4) = 59
+18:55:12.458626 getuid()                = 1000
+18:55:12.458752 writev(4</dev/pmsg0>, [{"lB\0\350\3p\1", 7}, {"\0s\1\220\307\262\1L\223O\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: get_utc_seconds\0", 36}], 5) = 66
+18:55:12.459089 getuid()                = 1000
+18:55:12.459214 writev(3<socket:[11655]>, [{"\0s\1\220\307\262\1\250\275\\\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: time_get_modem_time\0", 40}], 4) = 63
+18:55:12.459486 getuid()                = 1000
+18:55:12.459612 writev(4</dev/pmsg0>, [{"lF\0\350\3p\1", 7}, {"\0s\1\220\307\262\1\250\275\\\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: time_get_modem_time\0", 40}], 5) = 70
+18:55:12.459962 getuid()                = 1000
+18:55:12.460087 writev(3<socket:[11655]>, [{"\0s\1\220\307\262\1\334\rj\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: Checking if ATS_MODEM is set or not.\0", 57}], 4) = 80
+18:55:12.460359 getuid()                = 1000
+18:55:12.460485 writev(4</dev/pmsg0>, [{"lW\0\350\3p\1", 7}, {"\0s\1\220\307\262\1\334\rj\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: Checking if ATS_MODEM is set or not.\0", 57}], 5) = 87
+18:55:12.460886 getuid()                = 1000
+18:55:12.461031 writev(3<socket:[11655]>, [{"\0s\1\220\307\262\0019$x\33", 11}, {"\3", 1}, {"QC-time-services\0", 17}, {"Lib:time_genoff_operation: pargs->base = 13\n\0", 45}], 4) = 74
+18:55:12.461338 getuid()                = 1000
+18:55:12.461465 writev(4</dev/pmsg0>, [{"lQ\0\350\3p\1", 7}, {"\0s\1\220\307\262\0019$x\33", 11}, {"\3", 1}, {"QC-time-services\0", 17}, {"Lib:time_genoff_operation: pargs->base = 13\n\0", 45}], 5) = 81
+18:55:12.461828 getuid()                = 1000
+18:55:12.461956 writev(3<socket:[11655]>, [{"\0s\1\220\307\262\1\37\211\206\33", 11}, {"\3", 1}, {"QC-time-services\0", 17}, {"Lib:time_genoff_operation: pargs->operation = 2\n\0", 49}], 4) = 78
+18:55:12.462254 getuid()                = 1000
+18:55:12.462379 writev(4</dev/pmsg0>, [{"lU\0\350\3p\1", 7}, {"\0s\1\220\307\262\1\37\211\206\33", 11}, {"\3", 1}, {"QC-time-services\0", 17}, {"Lib:time_genoff_operation: pargs->operation = 2\n\0", 49}], 5) = 85
+18:55:12.462750 getuid()                = 1000
+18:55:12.462876 writev(3<socket:[11655]>, [{"\0s\1\220\307\262\1\274\226\224\33", 11}, {"\3", 1}, {"QC-time-services\0", 17}, {"Lib:time_genoff_operation: pargs->ts_val = 0\n\0", 46}], 4) = 75
+18:55:12.463211 getuid()                = 1000
+18:55:12.463351 writev(4</dev/pmsg0>, [{"lR\0\350\3p\1", 7}, {"\0s\1\220\307\262\1\274\226\224\33", 11}, {"\3", 1}, {"QC-time-services\0", 17}, {"Lib:time_genoff_operation: pargs->ts_val = 0\n\0", 46}], 5) = 82
+18:55:12.463779 socket(PF_LOCAL, SOCK_STREAM, 0) = 26<socket:[12581]>
+18:55:12.464198 setsockopt(26<socket:[12581]>, SOL_SOCKET, SO_RCVTIMEO, "\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 16) = 0
+18:55:12.464419 setsockopt(26<socket:[12581]>, SOL_SOCKET, SO_SNDTIMEO, "\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 16) = 0
+18:55:12.464615 connect(26<socket:[12581]>, {sa_family=AF_LOCAL, sun_path=@"time_genoff"}, 14) = -1 ECONNREFUSED (Connection refused)
+18:55:12.464942 getuid()                = 1000
+18:55:12.465082 writev(3<socket:[11655]>, [{"\0s\1\220\307\262\1\4\1\266\33", 11}, {"\6", 1}, {"QC-time-services\0", 17}, {"Lib:time_genoff_operation: Connection failed !!\n\0", 49}], 4) = 78
+18:55:12.465522 getuid()                = 1000
+18:55:12.465662 writev(4</dev/pmsg0>, [{"lU\0\350\3p\1", 7}, {"\0s\1\220\307\262\1\4\1\266\33", 11}, {"\6", 1}, {"QC-time-services\0", 17}, {"Lib:time_genoff_operation: Connection failed !!\n\0", 49}], 5) = 85
+18:55:12.466108 close(26<socket:[12581]>) = 0
+18:55:12.466429 getuid()                = 1000
+18:55:12.466570 writev(3<socket:[11655]>, [{"\0s\1\220\307\262\1\267\260\314\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: ATS_MODEM is not set. Fallback to Android system time.\0", 75}], 4) = 98
+18:55:12.467007 getuid()                = 1000
+18:55:12.467420 writev(4</dev/pmsg0>, [{"li\0\350\3p\1", 7}, {"\0s\1\220\307\262\1\267\260\314\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: ATS_MODEM is not set. Fallback to Android system time.\0", 75}], 5) = 105
+18:55:12.468439 getuid()                = 1000
+18:55:12.468593 writev(3<socket:[11655]>, [{"\0s\1\220\307\262\1\34/\353\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: Retrieved Android system time: 28493712\0", 60}], 4) = 83
+18:55:12.469061 getuid()                = 1000
+18:55:12.469191 writev(4</dev/pmsg0>, [{"lZ\0\350\3p\1", 7}, {"\0s\1\220\307\262\1\34/\353\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: Retrieved Android system time: 28493712\0", 60}], 5) = 90
+18:55:12.469593 getuid()                = 1000
+18:55:12.469719 writev(3<socket:[11655]>, [{"\0s\1\220\307\262\1E\0\375\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"time_getutcsec returns 0, sec = 28493712; nsec = 0\0", 51}], 4) = 74
+18:55:12.470016 getuid()                = 1000
+18:55:12.470142 writev(4</dev/pmsg0>, [{"lQ\0\350\3p\1", 7}, {"\0s\1\220\307\262\1E\0\375\33", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"time_getutcsec returns 0, sec = 28493712; nsec = 0\0", 51}], 5) = 81
+18:55:12.470505 getuid()                = 1000
+18:55:12.470631 writev(3<socket:[11655]>, [{"\0s\1\220\307\262\1?\350\n\34", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"time_getutcsec finished! \n\0", 27}], 4) = 50
+18:55:12.470979 getuid()                = 1000
+18:55:12.471113 writev(4</dev/pmsg0>, [{"l9\0\350\3p\1", 7}, {"\0s\1\220\307\262\1?\350\n\34", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"time_getutcsec finished! \n\0", 27}], 5) = 57
+18:55:12.471479 ioctl(14</dev/qseecom>, _IOC(0, 0x97, 0x06, 0x00), 0x10) = 0
+18:55:12.471726 getuid()                = 1000
+18:55:12.471865 writev(3<socket:[11655]>, [{"\0s\1\220\307\262\1;\217\35\34", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"iotcl_continue_command finished! and return 0 \0", 47}], 4) = 70
+18:55:12.472782 getuid()                = 1000
+18:55:12.473470 writev(4</dev/pmsg0>, [{"lM\0\350\3p\1", 7}, {"\0s\1\220\307\262\1;\217\35\34", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"iotcl_continue_command finished! and return 0 \0", 47}], 5) = 77
+18:55:12.474596 getuid()                = 1000
+18:55:12.474731 writev(3<socket:[11655]>, [{"\0s\1\220\307\262\0019:I\34", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"before calling ioctl to read the next time_cmd\0", 47}], 4) = 70
+18:55:12.475027 getuid()                = 1000
+18:55:12.475183 writev(4</dev/pmsg0>, [{"lM\0\350\3p\1", 7}, {"\0s\1\220\307\262\0019:I\34", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"before calling ioctl to read the next time_cmd\0", 47}], 5) = 77
+18:55:12.475529 ioctl(14</dev/qseecom>, _IOC(0, 0x97, 0x05, 0x00), 0x4e48) = 0
+18:55:16.570843 getuid()                = 1000
+18:55:16.571028 writev(3<socket:[11655]>, [{"\0s\1\224\307\262\1y+\5\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"got the req here! ret=0\0", 24}], 4) = 47
+18:55:16.571474 getuid()                = 1000
+18:55:16.571609 writev(4</dev/pmsg0>, [{"l6\0\350\3p\1", 7}, {"\0s\1\224\307\262\1y+\5\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"got the req here! ret=0\0", 24}], 5) = 54
+18:55:16.571997 getuid()                = 1000
+18:55:16.572125 writev(3<socket:[11655]>, [{"\0s\1\224\307\262\1\233\224\27\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"command id, time_cmd_id = 770\0", 30}], 4) = 53
+18:55:16.573288 getuid()                = 1000
+18:55:16.574011 writev(4</dev/pmsg0>, [{"l<\0\350\3p\1", 7}, {"\0s\1\224\307\262\1\233\224\27\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"command id, time_cmd_id = 770\0", 30}], 5) = 60
+18:55:16.574582 getuid()                = 1000
+18:55:16.574716 writev(3<socket:[11655]>, [{"\0s\1\224\307\262\1\347\374>\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"time_getutcsec starts!\0", 23}], 4) = 46
+18:55:16.575076 getuid()                = 1000
+18:55:16.575201 writev(4</dev/pmsg0>, [{"l5\0\350\3p\1", 7}, {"\0s\1\224\307\262\1\347\374>\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"time_getutcsec starts!\0", 23}], 5) = 53
+18:55:16.575558 getuid()                = 1000
+18:55:16.575684 writev(3<socket:[11655]>, [{"\0s\1\224\307\262\1L\351M\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: time_getutcsec\0", 35}], 4) = 58
+18:55:16.575979 getuid()                = 1000
+18:55:16.576110 writev(4</dev/pmsg0>, [{"lA\0\350\3p\1", 7}, {"\0s\1\224\307\262\1L\351M\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: time_getutcsec\0", 35}], 5) = 65
+18:55:16.576447 getuid()                = 1000
+18:55:16.576572 writev(3<socket:[11655]>, [{"\0s\1\224\307\262\1\372x[\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: get_utc_seconds\0", 36}], 4) = 59
+18:55:16.576859 getuid()                = 1000
+18:55:16.576984 writev(4</dev/pmsg0>, [{"lB\0\350\3p\1", 7}, {"\0s\1\224\307\262\1\372x[\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: get_utc_seconds\0", 36}], 5) = 66
+18:55:16.577336 getuid()                = 1000
+18:55:16.577462 writev(3<socket:[11655]>, [{"\0s\1\224\307\262\1E\ti\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: time_get_modem_time\0", 40}], 4) = 63
+18:55:16.577738 getuid()                = 1000
+18:55:16.577865 writev(4</dev/pmsg0>, [{"lF\0\350\3p\1", 7}, {"\0s\1\224\307\262\1E\ti\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: time_get_modem_time\0", 40}], 5) = 70
+18:55:16.578205 getuid()                = 1000
+18:55:16.578330 writev(3<socket:[11655]>, [{"\0s\1\224\307\262\1\340Mv\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: Checking if ATS_MODEM is set or not.\0", 57}], 4) = 80
+18:55:16.578601 getuid()                = 1000
+18:55:16.578726 writev(4</dev/pmsg0>, [{"lW\0\350\3p\1", 7}, {"\0s\1\224\307\262\1\340Mv\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: Checking if ATS_MODEM is set or not.\0", 57}], 5) = 87
+18:55:16.579065 getuid()                = 1000
+18:55:16.579192 writev(3<socket:[11655]>, [{"\0s\1\224\307\262\1\302g\203\"", 11}, {"\3", 1}, {"QC-time-services\0", 17}, {"Lib:time_genoff_operation: pargs->base = 13\n\0", 45}], 4) = 74
+18:55:16.579472 getuid()                = 1000
+18:55:16.579597 writev(4</dev/pmsg0>, [{"lQ\0\350\3p\1", 7}, {"\0s\1\224\307\262\1\302g\203\"", 11}, {"\3", 1}, {"QC-time-services\0", 17}, {"Lib:time_genoff_operation: pargs->base = 13\n\0", 45}], 5) = 81
+18:55:16.579926 getuid()                = 1000
+18:55:16.580052 writev(3<socket:[11655]>, [{"\0s\1\224\307\262\1\335\216\220\"", 11}, {"\3", 1}, {"QC-time-services\0", 17}, {"Lib:time_genoff_operation: pargs->operation = 2\n\0", 49}], 4) = 78
+18:55:16.580327 getuid()                = 1000
+18:55:16.580453 writev(4</dev/pmsg0>, [{"lU\0\350\3p\1", 7}, {"\0s\1\224\307\262\1\335\216\220\"", 11}, {"\3", 1}, {"QC-time-services\0", 17}, {"Lib:time_genoff_operation: pargs->operation = 2\n\0", 49}], 5) = 85
+18:55:16.580848 getuid()                = 1000
+18:55:16.580985 writev(3<socket:[11655]>, [{"\0s\1\224\307\262\1\227\332\235\"", 11}, {"\3", 1}, {"QC-time-services\0", 17}, {"Lib:time_genoff_operation: pargs->ts_val = 0\n\0", 46}], 4) = 75
+18:55:16.581303 getuid()                = 1000
+18:55:16.581431 writev(4</dev/pmsg0>, [{"lR\0\350\3p\1", 7}, {"\0s\1\224\307\262\1\227\332\235\"", 11}, {"\3", 1}, {"QC-time-services\0", 17}, {"Lib:time_genoff_operation: pargs->ts_val = 0\n\0", 46}], 5) = 82
+18:55:16.581768 socket(PF_LOCAL, SOCK_STREAM, 0) = 26<socket:[11730]>
+18:55:16.582083 setsockopt(26<socket:[11730]>, SOL_SOCKET, SO_RCVTIMEO, "\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 16) = 0
+18:55:16.582264 setsockopt(26<socket:[11730]>, SOL_SOCKET, SO_SNDTIMEO, "\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 16) = 0
+18:55:16.582434 connect(26<socket:[11730]>, {sa_family=AF_LOCAL, sun_path=@"time_genoff"}, 14) = -1 ECONNREFUSED (Connection refused)
+18:55:16.582691 getuid()                = 1000
+18:55:16.582817 writev(3<socket:[11655]>, [{"\0s\1\224\307\262\1J\302\272\"", 11}, {"\6", 1}, {"QC-time-services\0", 17}, {"Lib:time_genoff_operation: Connection failed !!\n\0", 49}], 4) = 78
+18:55:16.583418 getuid()                = 1000
+18:55:16.583567 writev(4</dev/pmsg0>, [{"lU\0\350\3p\1", 7}, {"\0s\1\224\307\262\1J\302\272\"", 11}, {"\6", 1}, {"QC-time-services\0", 17}, {"Lib:time_genoff_operation: Connection failed !!\n\0", 49}], 5) = 85
+18:55:16.583998 close(26<socket:[11730]>) = 0
+18:55:16.584283 getuid()                = 1000
+18:55:16.584411 writev(3<socket:[11655]>, [{"\0s\1\224\307\262\1v\373\322\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: ATS_MODEM is not set. Fallback to Android system time.\0", 75}], 4) = 98
+18:55:16.584785 getuid()                = 1000
+18:55:16.585115 writev(4</dev/pmsg0>, [{"li\0\350\3p\1", 7}, {"\0s\1\224\307\262\1v\373\322\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: ATS_MODEM is not set. Fallback to Android system time.\0", 75}], 5) = 105
+18:55:16.585979 getuid()                = 1000
+18:55:16.586127 writev(3<socket:[11655]>, [{"\0s\1\224\307\262\1\237\334\354\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: Retrieved Android system time: 28493716\0", 60}], 4) = 83
+18:55:16.586449 getuid()                = 1000
+18:55:16.586596 writev(4</dev/pmsg0>, [{"lZ\0\350\3p\1", 7}, {"\0s\1\224\307\262\1\237\334\354\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: Retrieved Android system time: 28493716\0", 60}], 5) = 90
+18:55:16.586954 getuid()                = 1000
+18:55:16.587080 writev(3<socket:[11655]>, [{"\0s\1\224\307\262\1\26\315\373\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"time_getutcsec returns 0, sec = 28493716; nsec = 0\0", 51}], 4) = 74
+18:55:16.587369 getuid()                = 1000
+18:55:16.587496 writev(4</dev/pmsg0>, [{"lQ\0\350\3p\1", 7}, {"\0s\1\224\307\262\1\26\315\373\"", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"time_getutcsec returns 0, sec = 28493716; nsec = 0\0", 51}], 5) = 81
+18:55:16.587826 getuid()                = 1000
+18:55:16.587952 writev(3<socket:[11655]>, [{"\0s\1\224\307\262\1u\33\t#", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"time_getutcsec finished! \n\0", 27}], 4) = 50
+18:55:16.588186 getuid()                = 1000
+18:55:16.588314 writev(4</dev/pmsg0>, [{"l9\0\350\3p\1", 7}, {"\0s\1\224\307\262\1u\33\t#", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"time_getutcsec finished! \n\0", 27}], 5) = 57
+18:55:16.588656 ioctl(14</dev/qseecom>, _IOC(0, 0x97, 0x06, 0x00), 0x10) = 0
+18:55:16.588891 getuid()                = 1000
+18:55:16.589035 writev(3<socket:[11655]>, [{"\0s\1\224\307\262\1\370X\31#", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"iotcl_continue_command finished! and return 0 \0", 47}], 4) = 70
+18:55:16.589483 getuid()                = 1000
+18:55:16.589627 writev(4</dev/pmsg0>, [{"lM\0\350\3p\1", 7}, {"\0s\1\224\307\262\1\370X\31#", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"iotcl_continue_command finished! and return 0 \0", 47}], 5) = 77
+18:55:16.590081 getuid()                = 1000
+18:55:16.590223 writev(3<socket:[11655]>, [{"\0s\1\224\307\262\1K\355*#", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"before calling ioctl to read the next time_cmd\0", 47}], 4) = 70
+18:55:16.590554 getuid()                = 1000
+18:55:16.590681 writev(4</dev/pmsg0>, [{"lM\0\350\3p\1", 7}, {"\0s\1\224\307\262\1K\355*#", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"before calling ioctl to read the next time_cmd\0", 47}], 5) = 77
+18:55:16.591268 ioctl(14</dev/qseecom>, _IOC(0, 0x97, 0x05, 0x00) <unfinished ...>
+18:55:19.539586 +++ killed by SIGKILL +++

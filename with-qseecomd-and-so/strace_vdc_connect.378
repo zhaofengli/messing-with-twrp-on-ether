@@ -1,0 +1,10 @@
+18:55:08.775772 getppid()               = 377
+18:55:08.775932 openat(AT_FDCWD, "/dev/null", O_RDWR) = 4</dev/null>
+18:55:08.776427 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f87f4caa8) = 379
+18:55:08.778115 mprotect(0x7f87e63000, 4096, PROT_READ|PROT_WRITE) = 0
+18:55:08.778465 mprotect(0x7f87e63000, 4096, PROT_READ) = 0
+18:55:08.778737 mprotect(0x7f87e63000, 4096, PROT_READ|PROT_WRITE) = 0
+18:55:08.778993 mprotect(0x7f87e63000, 4096, PROT_READ) = 0
+18:55:08.779202 munmap(0x7f87e63000, 4096) = 0
+18:55:08.779452 exit_group(0)           = ?
+18:55:08.780269 +++ exited with 0 +++

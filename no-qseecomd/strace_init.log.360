@@ -1,0 +1,409 @@
+18:45:54.911267 getuid()                = 1000
+18:45:54.911451 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\304[P6", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"qseecom listener service threads starting!!! \0", 46}], 4) = 69
+18:45:54.912868 getuid()                = 1000
+18:45:54.913001 writev(4</dev/pmsg0>, [{"lL\0\350\3h\1", 7}, {"\0h\1b\305\262\1\304[P6", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"qseecom listener service threads starting!!! \0", 46}], 5) = 76
+18:45:54.913410 getuid()                = 1000
+18:45:54.913529 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1@!q6", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Total listener services to start = 7\0", 37}], 4) = 60
+18:45:54.913853 getuid()                = 1000
+18:45:54.914023 writev(4</dev/pmsg0>, [{"lC\0\350\3h\1", 7}, {"\0h\1b\305\262\1@!q6", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Total listener services to start = 7\0", 37}], 5) = 67
+18:45:54.914420 getuid()                = 1000
+18:45:54.914579 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1[\331\1776", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 0, hierarchy = 1\0", 35}], 4) = 58
+18:45:54.914904 getuid()                = 1000
+18:45:54.915070 writev(4</dev/pmsg0>, [{"lA\0\350\3h\1", 7}, {"\0h\1b\305\262\1[\331\1776", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 0, hierarchy = 1\0", 35}], 5) = 65
+18:45:54.915448 mprotect(0x7f895fe000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.915593 mprotect(0x7f895df000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.915730 mprotect(0x7f89601000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.915910 mprotect(0x7f89622000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.916247 mprotect(0x7f895fe000, 4096, PROT_READ) = 0
+18:45:54.916411 mprotect(0x7f895df000, 4096, PROT_READ) = 0
+18:45:54.916576 mprotect(0x7f89601000, 4096, PROT_READ) = 0
+18:45:54.916760 mprotect(0x7f89622000, 4096, PROT_READ) = 0
+18:45:54.917048 getuid()                = 1000
+18:45:54.917226 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\34\217\2506", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(librpmb.so, RTLD_NOW) succeeds\0", 43}], 4) = 66
+18:45:54.917701 getuid()                = 1000
+18:45:54.917883 writev(4</dev/pmsg0>, [{"lI\0\350\3h\1", 7}, {"\0h\1b\305\262\1\34\217\2506", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(librpmb.so, RTLD_NOW) succeeds\0", 43}], 5) = 73
+18:45:54.918282 getuid()                = 1000
+18:45:54.918999 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\202\211\2736", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init::Init dlsym(g_FSHandle rpmb_start) succeeds\0", 49}], 4) = 72
+18:45:54.919537 getuid()                = 1000
+18:45:54.919675 writev(4</dev/pmsg0>, [{"lO\0\350\3h\1", 7}, {"\0h\1b\305\262\1\202\211\2736", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init::Init dlsym(g_FSHandle rpmb_start) succeeds\0", 49}], 5) = 79
+18:45:54.920104 getuid()                = 1000
+18:45:54.920292 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1Ce\3276", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_register_listener 8192 sb_length = 0x5000\n\0", 51}], 4) = 76
+18:45:54.920616 getuid()                = 1000
+18:45:54.920846 writev(4</dev/pmsg0>, [{"lS\0\350\3h\1", 7}, {"\0h\1b\305\262\1Ce\3276", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_register_listener 8192 sb_length = 0x5000\n\0", 51}], 5) = 83
+18:45:54.921271 openat(AT_FDCWD, "/dev/qseecom", O_RDWR) = 7</dev/qseecom>
+18:45:54.921785 ioctl(7</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x0a, 0x04), 0x7feadf7738) = 0
+18:45:54.922074 openat(AT_FDCWD, "/dev/ion", O_RDONLY) = 8</dev/ion>
+18:45:54.922449 ioctl(8</dev/ion>, ION_IOC_ALLOC, 0x7feadf76b0) = 0
+18:45:54.923404 ioctl(8</dev/ion>, ION_IOC_MAP, 0x7feadf76a8) = 0
+18:45:54.923658 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_SHARED, 10<anon_inode:dmabuf>, 0) = 0x7f895f7000
+18:45:54.923974 ioctl(7</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x01, 0x18), 0x7feadf7748) = 0
+18:45:54.924215 mmap(NULL, 1036288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f89012000
+18:45:54.924348 mprotect(0x7f89012000, 4096, PROT_NONE) = 0
+18:45:54.924542 prctl(0x53564d41 /* PR_??? */, 0, 0x7f89012000, 4096, "thread stack guard page") = 0
+18:45:54.924791 clone(child_stack=0x7f8910e440, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f8910e460, tls=0x7f8910e4e8, child_tidptr=0x7f8910e460) = 361
+18:45:54.925308 futex(0x7f8910e4d0, FUTEX_WAKE_PRIVATE, 1) = 1
+18:45:54.925521 getuid()                = 1000
+18:45:54.925639 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\26\333)7", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init rpmb_start ret = 0\0", 24}], 4) = 47
+18:45:54.926062 getuid()                = 1000
+18:45:54.926303 writev(4</dev/pmsg0>, [{"l6\0\350\3h\1", 7}, {"\0h\1b\305\262\1\26\333)7", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init rpmb_start ret = 0\0", 24}], 5) = 54
+18:45:54.926781 getuid()                = 1000
+18:45:54.926912 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1&\345<7", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"RPMB system services: Started (Listener ID = 8192)\0", 51}], 4) = 74
+18:45:54.927329 getuid()                = 1000
+18:45:54.927511 writev(4</dev/pmsg0>, [{"lQ\0\350\3h\1", 7}, {"\0h\1b\305\262\1&\345<7", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"RPMB system services: Started (Listener ID = 8192)\0", 51}], 5) = 81
+18:45:54.927948 getuid()                = 1000
+18:45:54.928128 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\227hN7", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 1, hierarchy = 1\0", 35}], 4) = 58
+18:45:54.928433 getuid()                = 1000
+18:45:54.928613 writev(4</dev/pmsg0>, [{"lA\0\350\3h\1", 7}, {"\0h\1b\305\262\1\227hN7", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 1, hierarchy = 1\0", 35}], 5) = 65
+18:45:54.928939 mprotect(0x7f895fe000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.929084 mprotect(0x7f895df000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.929242 mprotect(0x7f89601000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.929360 mprotect(0x7f89622000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.929551 mprotect(0x7f895fe000, 4096, PROT_READ) = 0
+18:45:54.929789 mprotect(0x7f895df000, 4096, PROT_READ) = 0
+18:45:54.929944 mprotect(0x7f89601000, 4096, PROT_READ) = 0
+18:45:54.930070 mprotect(0x7f89622000, 4096, PROT_READ) = 0
+18:45:54.930231 getuid()                = 1000
+18:45:54.930353 writev(3<socket:[11566]>, [{"\0h\1b\305\262\0010\311q7", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(libssd.so, RTLD_NOW) succeeds\0", 42}], 4) = 65
+18:45:54.930768 getuid()                = 1000
+18:45:54.930961 writev(4</dev/pmsg0>, [{"lH\0\350\3h\1", 7}, {"\0h\1b\305\262\0010\311q7", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(libssd.so, RTLD_NOW) succeeds\0", 42}], 5) = 72
+18:45:54.931342 getuid()                = 1000
+18:45:54.931524 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1r\343\2027", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init::Init dlsym(g_FSHandle ssd_start) succeeds\0", 48}], 4) = 71
+18:45:54.931882 getuid()                = 1000
+18:45:54.932129 writev(4</dev/pmsg0>, [{"lN\0\350\3h\1", 7}, {"\0h\1b\305\262\1r\343\2027", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init::Init dlsym(g_FSHandle ssd_start) succeeds\0", 48}], 5) = 78
+18:45:54.932613 getuid()                = 1000
+18:45:54.932736 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\10s\2257", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_register_listener 12288 sb_length = 0x5000\n\0", 52}], 4) = 77
+18:45:54.933100 getuid()                = 1000
+18:45:54.933264 writev(4</dev/pmsg0>, [{"lT\0\350\3h\1", 7}, {"\0h\1b\305\262\1\10s\2257", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_register_listener 12288 sb_length = 0x5000\n\0", 52}], 5) = 84
+18:45:54.933671 openat(AT_FDCWD, "/dev/qseecom", O_RDWR) = 11</dev/qseecom>
+18:45:54.933962 ioctl(11</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x0a, 0x04), 0x7feadf7738) = 0
+18:45:54.934172 openat(AT_FDCWD, "/dev/ion", O_RDONLY) = 12</dev/ion>
+18:45:54.934566 ioctl(12</dev/ion>, ION_IOC_ALLOC, 0x7feadf76b0) = 0
+18:45:54.935531 ioctl(12</dev/ion>, ION_IOC_MAP, 0x7feadf76a8) = 0
+18:45:54.935793 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_SHARED, 13<anon_inode:dmabuf>, 0) = 0x7f895e9000
+18:45:54.936137 ioctl(11</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x01, 0x18), 0x7feadf7748) = 0
+18:45:54.936412 mmap(NULL, 1036288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f88b03000
+18:45:54.936577 mprotect(0x7f88b03000, 4096, PROT_NONE) = 0
+18:45:54.936702 prctl(0x53564d41 /* PR_??? */, 0, 0x7f88b03000, 4096, "thread stack guard page") = 0
+18:45:54.937655 clone(child_stack=0x7f88bff440, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f88bff460, tls=0x7f88bff4e8, child_tidptr=0x7f88bff460) = 362
+18:45:54.938493 futex(0x7f88bff4d0, FUTEX_WAKE_PRIVATE, 1) = 1
+18:45:54.938747 getuid()                = 1000
+18:45:54.938886 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\326\341\3637", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init ssd_start ret = 0\0", 23}], 4) = 46
+18:45:54.939240 getuid()                = 1000
+18:45:54.939418 writev(4</dev/pmsg0>, [{"l5\0\350\3h\1", 7}, {"\0h\1b\305\262\1\326\341\3637", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init ssd_start ret = 0\0", 23}], 5) = 53
+18:45:54.940092 getuid()                = 1000
+18:45:54.940289 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\311\341\0058", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"SSD system services: Started (Listener ID = 12288)\0", 51}], 4) = 74
+18:45:54.940777 getuid()                = 1000
+18:45:54.940978 writev(4</dev/pmsg0>, [{"lQ\0\350\3h\1", 7}, {"\0h\1b\305\262\1\311\341\0058", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"SSD system services: Started (Listener ID = 12288)\0", 51}], 5) = 81
+18:45:54.941414 getuid()                = 1000
+18:45:54.942000 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\313\\\0348", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 2, hierarchy = 1\0", 35}], 4) = 58
+18:45:54.943301 getuid()                = 1000
+18:45:54.943525 writev(4</dev/pmsg0>, [{"lA\0\350\3h\1", 7}, {"\0h\1b\305\262\1\313\\\0348", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 2, hierarchy = 1\0", 35}], 5) = 65
+18:45:54.943959 mprotect(0x7f895fe000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.944100 mprotect(0x7f895df000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.944235 mprotect(0x7f89601000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.944434 mprotect(0x7f89622000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.944652 openat(AT_FDCWD, "/system/lib64/libsecureui.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+18:45:54.944845 openat(AT_FDCWD, "/system/lib/libsecureui.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+18:45:54.945017 openat(AT_FDCWD, "/system/lib64/libsecureui.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+18:45:54.945185 openat(AT_FDCWD, "/system/vendor/lib64/libsecureui.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+18:45:54.945355 mprotect(0x7f895fe000, 4096, PROT_READ) = 0
+18:45:54.945485 mprotect(0x7f895df000, 4096, PROT_READ) = 0
+18:45:54.945609 mprotect(0x7f89601000, 4096, PROT_READ) = 0
+18:45:54.945734 mprotect(0x7f89622000, 4096, PROT_READ) = 0
+18:45:54.945920 getuid()                = 1000
+18:45:54.946326 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1/.a8", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(libsecureui.so, RLTD_NOW) is failed....\0", 52}], 4) = 75
+18:45:54.946627 getuid()                = 1000
+18:45:54.946812 writev(4</dev/pmsg0>, [{"lR\0\350\3h\1", 7}, {"\0h\1b\305\262\1/.a8", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(libsecureui.so, RLTD_NOW) is failed....\0", 52}], 5) = 82
+18:45:54.947184 getuid()                = 1000
+18:45:54.947357 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\300at8", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 3, hierarchy = 1\0", 35}], 4) = 58
+18:45:54.947619 getuid()                = 1000
+18:45:54.947795 writev(4</dev/pmsg0>, [{"lA\0\350\3h\1", 7}, {"\0h\1b\305\262\1\300at8", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 3, hierarchy = 1\0", 35}], 5) = 65
+18:45:54.948158 mprotect(0x7f895fe000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.948313 mprotect(0x7f895df000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.948453 mprotect(0x7f89601000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.948593 mprotect(0x7f89622000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.948825 openat(AT_FDCWD, "/system/lib64/libdrmtime.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+18:45:54.949047 openat(AT_FDCWD, "/system/lib/libdrmtime.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+18:45:54.949240 openat(AT_FDCWD, "/system/lib64/libdrmtime.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+18:45:54.949397 openat(AT_FDCWD, "/system/vendor/lib64/libdrmtime.so", O_RDONLY|O_CLOEXEC) = 14</system/vendor/lib64/libdrmtime.so>
+18:45:54.949651 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0</dev/null>, 0) = 0x7f895e2000
+18:45:54.949876 prctl(0x53564d41 /* PR_??? */, 0, 0x7f895e2000, 8192, "linker_alloc_lob") = 0
+18:45:54.950041 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0</dev/null>, 0) = 0x7f895e0000
+18:45:54.950212 prctl(0x53564d41 /* PR_??? */, 0, 0x7f895e0000, 8192, "linker_alloc_lob") = 0
+18:45:54.950414 readlinkat(AT_FDCWD, "/proc/self/fd/14", "/system/vendor/lib64/libdrmtime.so", 4096) = 34
+18:45:54.950798 munmap(0x7f895e0000, 8192) = 0
+18:45:54.951106 munmap(0x7f895e2000, 8192) = 0
+18:45:54.951295 fstat(14</system/vendor/lib64/libdrmtime.so>, {st_dev=makedev(259, 18), st_ino=2816, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=32, st_size=14064, st_atime=2009/01/01-08:00:00, st_mtime=2009/01/01-08:00:00, st_ctime=2009/01/01-08:00:00}) = 0
+18:45:54.951580 openat(AT_FDCWD, "/dev/urandom", O_RDONLY|O_NOFOLLOW|O_CLOEXEC) = 15</dev/urandom>
+18:45:54.952112 fstat(15</dev/urandom>, {st_dev=makedev(0, 11), st_ino=2045, st_mode=S_IFCHR|0666, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_rdev=makedev(1, 9), st_atime=1970/11/26-18:45:41, st_mtime=1970/11/26-18:45:41, st_ctime=1970/11/26-18:45:41}) = 0
+18:45:54.952401 ioctl(15</dev/urandom>, RNDGETENTCNT, 0x7feadf7074) = 0
+18:45:54.952740 read(15</dev/urandom>, "\245\"\30\241\27\324\32DU\333\331nd\201\260G\257\320\251\367\373\260\355\32\230\206\207\246!\2600\177\303\373\3653\fi\301\361", 40) = 40
+18:45:54.953405 close(15</dev/urandom>) = 0
+18:45:54.953692 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0</dev/null>, 0) = 0x7f895e3000
+18:45:54.953944 prctl(0x53564d41 /* PR_??? */, 0, 0x7f895e3000, 4096, "linker_alloc_small_objects") = 0
+18:45:54.954304 pread64(14</system/vendor/lib64/libdrmtime.so>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0`\n\0\0\0\0\0\0@\0\0\0\0\0\0\00001\0\0\0\0\0\0\0\0\0\0@\0008\0\10\0@\0\27\0\26\0", 64, 0) = 64
+18:45:54.955548 mmap(NULL, 576, PROT_READ, MAP_PRIVATE, 14</system/vendor/lib64/libdrmtime.so>, 0) = 0x7f895e2000
+18:45:54.955738 mmap(NULL, 2080, PROT_READ, MAP_PRIVATE, 14</system/vendor/lib64/libdrmtime.so>, 0x3000) = 0x7f895e1000
+18:45:54.955913 mmap(NULL, 7264, PROT_READ, MAP_PRIVATE, 14</system/vendor/lib64/libdrmtime.so>, 0x2000) = 0x7f895dc000
+18:45:54.956121 mmap(NULL, 3107, PROT_READ, MAP_PRIVATE, 14</system/vendor/lib64/libdrmtime.so>, 0) = 0x7f895e0000
+18:45:54.956315 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0</dev/null>, 0) = 0x7f895db000
+18:45:54.956482 prctl(0x53564d41 /* PR_??? */, 0, 0x7f895db000, 4096, "linker_alloc_small_objects") = 0
+18:45:54.956752 openat(AT_FDCWD, "/system/lib64/libtime_genoff.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+18:45:54.956968 openat(AT_FDCWD, "/system/lib/libtime_genoff.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+18:45:54.957143 openat(AT_FDCWD, "/system/lib64/libtime_genoff.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+18:45:54.957360 openat(AT_FDCWD, "/system/vendor/lib64/libtime_genoff.so", O_RDONLY|O_CLOEXEC) = 15</system/vendor/lib64/libtime_genoff.so>
+18:45:54.957600 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0</dev/null>, 0) = 0x7f895d9000
+18:45:54.957793 prctl(0x53564d41 /* PR_??? */, 0, 0x7f895d9000, 8192, "linker_alloc_lob") = 0
+18:45:54.958045 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0</dev/null>, 0) = 0x7f895d7000
+18:45:54.958259 prctl(0x53564d41 /* PR_??? */, 0, 0x7f895d7000, 8192, "linker_alloc_lob") = 0
+18:45:54.958450 readlinkat(AT_FDCWD, "/proc/self/fd/15", "/system/vendor/lib64/libtime_genoff.so", 4096) = 38
+18:45:54.958656 munmap(0x7f895d7000, 8192) = 0
+18:45:54.958831 munmap(0x7f895d9000, 8192) = 0
+18:45:54.958980 fstat(15</system/vendor/lib64/libtime_genoff.so>, {st_dev=makedev(259, 18), st_ino=2878, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=24, st_size=9864, st_atime=2009/01/01-08:00:00, st_mtime=2009/01/01-08:00:00, st_ctime=2009/01/01-08:00:00}) = 0
+18:45:54.959329 pread64(15</system/vendor/lib64/libtime_genoff.so>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\20\t\0\0\0\0\0\0@\0\0\0\0\0\0\0\10!\0\0\0\0\0\0\0\0\0\0@\0008\0\10\0@\0\26\0\25\0", 64, 0) = 64
+18:45:54.960034 mmap(NULL, 576, PROT_READ, MAP_PRIVATE, 15</system/vendor/lib64/libtime_genoff.so>, 0) = 0x7f895da000
+18:45:54.960242 mmap(NULL, 1936, PROT_READ, MAP_PRIVATE, 15</system/vendor/lib64/libtime_genoff.so>, 0x2000) = 0x7f895d9000
+18:45:54.960405 mmap(NULL, 7392, PROT_READ, MAP_PRIVATE, 15</system/vendor/lib64/libtime_genoff.so>, 0x1000) = 0x7f895d7000
+18:45:54.960701 mmap(NULL, 2811, PROT_READ, MAP_PRIVATE, 15</system/vendor/lib64/libtime_genoff.so>, 0) = 0x7f895d6000
+18:45:54.960950 mmap(NULL, 77824, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f88af0000
+18:45:54.961087 mmap(0x7f88af0000, 6008, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 15</system/vendor/lib64/libtime_genoff.so>, 0) = 0x7f88af0000
+18:45:54.961347 mmap(0x7f88b01000, 4104, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 15</system/vendor/lib64/libtime_genoff.so>, 0x1000) = 0x7f88b01000
+18:45:54.961613 mmap(NULL, 81920, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f88adc000
+18:45:54.961750 mmap(0x7f88adc000, 8832, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 14</system/vendor/lib64/libdrmtime.so>, 0) = 0x7f88adc000
+18:45:54.961947 mmap(0x7f88aee000, 4104, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 14</system/vendor/lib64/libdrmtime.so>, 0x2000) = 0x7f88aee000
+18:45:54.962345 mprotect(0x7f88aee000, 4096, PROT_READ) = 0
+18:45:54.962673 mprotect(0x7f88b01000, 4096, PROT_READ) = 0
+18:45:54.962812 close(14</system/vendor/lib64/libdrmtime.so>) = 0
+18:45:54.963246 close(15</system/vendor/lib64/libtime_genoff.so>) = 0
+18:45:54.963463 munmap(0x7f895d6000, 2811) = 0
+18:45:54.963666 munmap(0x7f895d7000, 7392) = 0
+18:45:54.963792 munmap(0x7f895d9000, 1936) = 0
+18:45:54.963956 munmap(0x7f895da000, 576) = 0
+18:45:54.964193 munmap(0x7f895e0000, 3107) = 0
+18:45:54.964373 munmap(0x7f895dc000, 7264) = 0
+18:45:54.964500 munmap(0x7f895e1000, 2080) = 0
+18:45:54.964674 munmap(0x7f895e2000, 576) = 0
+18:45:54.964823 munmap(0x7f895e3000, 4096) = 0
+18:45:54.964987 munmap(0x7f895db000, 4096) = 0
+18:45:54.965131 mprotect(0x7f895fe000, 4096, PROT_READ) = 0
+18:45:54.965270 mprotect(0x7f895df000, 4096, PROT_READ) = 0
+18:45:54.965391 mprotect(0x7f89601000, 4096, PROT_READ) = 0
+18:45:54.965544 mprotect(0x7f89622000, 4096, PROT_READ) = 0
+18:45:54.965765 getuid()                = 1000
+18:45:54.965917 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1f\337\2179", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(libdrmtime.so, RTLD_NOW) succeeds\0", 46}], 4) = 69
+18:45:54.966739 getuid()                = 1000
+18:45:54.967010 writev(4</dev/pmsg0>, [{"lL\0\350\3h\1", 7}, {"\0h\1b\305\262\1f\337\2179", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(libdrmtime.so, RTLD_NOW) succeeds\0", 46}], 5) = 76
+18:45:54.967437 getuid()                = 1000
+18:45:54.967569 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1H\244\2519", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init::Init dlsym(g_FSHandle atime_start) succeeds\0", 50}], 4) = 73
+18:45:54.968251 getuid()                = 1000
+18:45:54.968544 writev(4</dev/pmsg0>, [{"lP\0\350\3h\1", 7}, {"\0h\1b\305\262\1H\244\2519", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init::Init dlsym(g_FSHandle atime_start) succeeds\0", 50}], 5) = 80
+18:45:54.969023 getuid()                = 1000
+18:45:54.969197 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\0|\3019", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: atime_start\0", 32}], 4) = 55
+18:45:54.969603 getuid()                = 1000
+18:45:54.969727 writev(4</dev/pmsg0>, [{"l>\0\350\3h\1", 7}, {"\0h\1b\305\262\1\0|\3019", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"QSEE Time Listener: atime_start\0", 32}], 5) = 62
+18:45:54.970228 getuid()                = 1000
+18:45:54.970683 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\230\315\3229", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_register_listener 11 sb_length = 0x5000\n\0", 49}], 4) = 74
+18:45:54.971374 getuid()                = 1000
+18:45:54.971819 writev(4</dev/pmsg0>, [{"lQ\0\350\3h\1", 7}, {"\0h\1b\305\262\1\230\315\3229", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_register_listener 11 sb_length = 0x5000\n\0", 49}], 5) = 81
+18:45:54.972214 openat(AT_FDCWD, "/dev/qseecom", O_RDWR) = 14</dev/qseecom>
+18:45:54.972458 ioctl(14</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x0a, 0x04), 0x7feadf7738) = 0
+18:45:54.972771 openat(AT_FDCWD, "/dev/ion", O_RDONLY) = 15</dev/ion>
+18:45:54.973202 ioctl(15</dev/ion>, ION_IOC_ALLOC, 0x7feadf76b0) = 0
+18:45:54.974131 ioctl(15</dev/ion>, ION_IOC_MAP, 0x7feadf76a8) = 0
+18:45:54.974395 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_SHARED, 16<anon_inode:dmabuf>, 0) = 0x7f895d9000
+18:45:54.974703 ioctl(14</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x01, 0x18), 0x7feadf7748) = 0
+18:45:54.974965 getuid()                = 1000
+18:45:54.975233 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1f^\34:", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"registering fs service to QSEECom is done!\0", 43}], 4) = 66
+18:45:54.975836 getuid()                = 1000
+18:45:54.977263 writev(4</dev/pmsg0>, [{"lI\0\350\3h\1", 7}, {"\0h\1b\305\262\1f^\34:", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"registering fs service to QSEECom is done!\0", 43}], 5) = 73
+18:45:54.977942 getuid()                = 1000
+18:45:54.978071 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\222\244I:", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"begin to create a thread!\0", 26}], 4) = 49
+18:45:54.978441 getuid()                = 1000
+18:45:54.978576 writev(4</dev/pmsg0>, [{"l8\0\350\3h\1", 7}, {"\0h\1b\305\262\1\222\244I:", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"begin to create a thread!\0", 26}], 5) = 56
+18:45:54.978930 mmap(NULL, 1036288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f889df000
+18:45:54.979091 mprotect(0x7f889df000, 4096, PROT_NONE) = 0
+18:45:54.979230 prctl(0x53564d41 /* PR_??? */, 0, 0x7f889df000, 4096, "thread stack guard page") = 0
+18:45:54.979433 clone(child_stack=0x7f88adb440, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f88adb460, tls=0x7f88adb4e8, child_tidptr=0x7f88adb460) = 363
+18:45:54.979906 futex(0x7f88adb4d0, FUTEX_WAKE_PRIVATE, 1) = 1
+18:45:54.980099 getuid()                = 1000
+18:45:54.980234 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\357\330j:", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"Creating a pthread in atime_start is done! return 0\0", 52}], 4) = 75
+18:45:54.981144 getuid()                = 1000
+18:45:54.981386 writev(4</dev/pmsg0>, [{"lR\0\350\3h\1", 7}, {"\0h\1b\305\262\1\357\330j:", 11}, {"\3", 1}, {"DrmLibTime\0", 11}, {"Creating a pthread in atime_start is done! return 0\0", 52}], 5) = 82
+18:45:54.982009 getuid()                = 1000
+18:45:54.982172 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1~[\204:", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init atime_start ret = 0\0", 25}], 4) = 48
+18:45:54.982480 getuid()                = 1000
+18:45:54.982741 writev(4</dev/pmsg0>, [{"l7\0\350\3h\1", 7}, {"\0h\1b\305\262\1~[\204:", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init atime_start ret = 0\0", 25}], 5) = 55
+18:45:54.983231 getuid()                = 1000
+18:45:54.983387 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1cG\230:", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"time services: Started (Listener ID = 11)\0", 42}], 4) = 65
+18:45:54.983774 getuid()                = 1000
+18:45:54.984031 writev(4</dev/pmsg0>, [{"lH\0\350\3h\1", 7}, {"\0h\1b\305\262\1cG\230:", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"time services: Started (Listener ID = 11)\0", 42}], 5) = 72
+18:45:54.984385 getuid()                = 1000
+18:45:54.984591 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\216\374\253:", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 4, hierarchy = 1\0", 35}], 4) = 58
+18:45:54.984845 getuid()                = 1000
+18:45:54.984974 writev(4</dev/pmsg0>, [{"lA\0\350\3h\1", 7}, {"\0h\1b\305\262\1\216\374\253:", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 4, hierarchy = 1\0", 35}], 5) = 65
+18:45:54.985339 mprotect(0x7f895fe000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.985480 mprotect(0x7f895df000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.985611 mprotect(0x7f89601000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.985743 mprotect(0x7f89622000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.985914 mprotect(0x7f895fe000, 4096, PROT_READ) = 0
+18:45:54.986040 mprotect(0x7f895df000, 4096, PROT_READ) = 0
+18:45:54.986165 mprotect(0x7f89601000, 4096, PROT_READ) = 0
+18:45:54.986677 mprotect(0x7f89622000, 4096, PROT_READ) = 0
+18:45:54.986900 getuid()                = 1000
+18:45:54.987078 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\310\n\322:", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(libdrmfs.so, RTLD_NOW) succeeds\0", 44}], 4) = 67
+18:45:54.987396 getuid()                = 1000
+18:45:54.987507 writev(4</dev/pmsg0>, [{"lJ\0\350\3h\1", 7}, {"\0h\1b\305\262\1\310\n\322:", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(libdrmfs.so, RTLD_NOW) succeeds\0", 44}], 5) = 74
+18:45:54.988047 getuid()                = 1000
+18:45:54.988184 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1lS\343:", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init::Init dlsym(g_FSHandle fs_start) succeeds\0", 47}], 4) = 70
+18:45:54.989124 getuid()                = 1000
+18:45:54.989279 writev(4</dev/pmsg0>, [{"lM\0\350\3h\1", 7}, {"\0h\1b\305\262\1lS\343:", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init::Init dlsym(g_FSHandle fs_start) succeeds\0", 47}], 5) = 77
+18:45:54.989732 getuid()                = 1000
+18:45:54.989862 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1 \233\375:", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_register_listener 10 sb_length = 0x5000\n\0", 49}], 4) = 74
+18:45:54.990227 getuid()                = 1000
+18:45:54.990367 writev(4</dev/pmsg0>, [{"lQ\0\350\3h\1", 7}, {"\0h\1b\305\262\1 \233\375:", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_register_listener 10 sb_length = 0x5000\n\0", 49}], 5) = 81
+18:45:54.990906 openat(AT_FDCWD, "/dev/qseecom", O_RDWR) = 17</dev/qseecom>
+18:45:54.991216 ioctl(17</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x0a, 0x04), 0x7feadf7748) = 0
+18:45:54.991427 openat(AT_FDCWD, "/dev/ion", O_RDONLY) = 18</dev/ion>
+18:45:54.991727 ioctl(18</dev/ion>, ION_IOC_ALLOC, 0x7feadf76c0) = 0
+18:45:54.992685 ioctl(18</dev/ion>, ION_IOC_MAP, 0x7feadf76b8) = 0
+18:45:54.992924 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_SHARED, 19<anon_inode:dmabuf>, 0) = 0x7f895cf000
+18:45:54.993221 ioctl(17</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x01, 0x18), 0x7feadf7758) = 0
+18:45:54.993457 mmap(NULL, 1036288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f888e2000
+18:45:54.993606 mprotect(0x7f888e2000, 4096, PROT_NONE) = 0
+18:45:54.993845 prctl(0x53564d41 /* PR_??? */, 0, 0x7f888e2000, 4096, "thread stack guard page") = 0
+18:45:54.994080 clone(child_stack=0x7f889de440, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f889de460, tls=0x7f889de4e8, child_tidptr=0x7f889de460) = 364
+18:45:54.994913 futex(0x7f889de4d0, FUTEX_WAKE_PRIVATE, 1) = 1
+18:45:54.995198 getuid()                = 1000
+18:45:54.995335 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1J\336O;", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init fs_start ret = 0\0", 22}], 4) = 45
+18:45:54.995737 getuid()                = 1000
+18:45:54.995963 writev(4</dev/pmsg0>, [{"l4\0\350\3h\1", 7}, {"\0h\1b\305\262\1J\336O;", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init fs_start ret = 0\0", 22}], 5) = 52
+18:45:54.996454 getuid()                = 1000
+18:45:54.996600 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\301&d;", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"file system services: Started (Listener ID = 10)\0", 49}], 4) = 72
+18:45:54.997011 getuid()                = 1000
+18:45:54.997164 writev(4</dev/pmsg0>, [{"lO\0\350\3h\1", 7}, {"\0h\1b\305\262\1\301&d;", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"file system services: Started (Listener ID = 10)\0", 49}], 5) = 79
+18:45:54.997500 getuid()                = 1000
+18:45:54.997648 writev(3<socket:[11566]>, [{"\0h\1b\305\262\1\301]t;", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 5, hierarchy = 1\0", 35}], 4) = 58
+18:45:54.997902 getuid()                = 1000
+18:45:54.998083 writev(4</dev/pmsg0>, [{"lA\0\350\3h\1", 7}, {"\0h\1b\305\262\1\301]t;", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 5, hierarchy = 1\0", 35}], 5) = 65
+18:45:54.998448 mprotect(0x7f895fe000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.998648 mprotect(0x7f895df000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.998804 mprotect(0x7f89601000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.998964 mprotect(0x7f89622000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:54.999156 openat(AT_FDCWD, "/system/lib64/libmdtp.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+18:45:54.999361 openat(AT_FDCWD, "/system/lib/libmdtp.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+18:45:54.999645 openat(AT_FDCWD, "/system/lib64/libmdtp.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+18:45:54.999843 openat(AT_FDCWD, "/system/vendor/lib64/libmdtp.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+18:45:55.000065 mprotect(0x7f895fe000, 4096, PROT_READ) = 0
+18:45:55.000232 mprotect(0x7f895df000, 4096, PROT_READ) = 0
+18:45:55.000379 mprotect(0x7f89601000, 4096, PROT_READ) = 0
+18:45:55.000522 mprotect(0x7f89622000, 4096, PROT_READ) = 0
+18:45:55.000826 getuid()                = 1000
+18:45:55.000967 writev(3<socket:[11566]>, [{"\0h\1c\305\262\1a)\f\0", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(libmdtp.so, RLTD_NOW) is failed....\0", 48}], 4) = 71
+18:45:55.001388 getuid()                = 1000
+18:45:55.001583 writev(4</dev/pmsg0>, [{"lN\0\350\3h\1", 7}, {"\0h\1c\305\262\1a)\f\0", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(libmdtp.so, RLTD_NOW) is failed....\0", 48}], 5) = 78
+18:45:55.002211 getuid()                = 1000
+18:45:55.002378 writev(3<socket:[11566]>, [{"\0h\1c\305\262\1\32&!\0", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 6, hierarchy = 1\0", 35}], 4) = 58
+18:45:55.002847 getuid()                = 1000
+18:45:55.003378 writev(4</dev/pmsg0>, [{"lA\0\350\3h\1", 7}, {"\0h\1c\305\262\1\32&!\0", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Listener: index = 6, hierarchy = 1\0", 35}], 5) = 65
+18:45:55.003768 mprotect(0x7f895fe000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:55.003898 mprotect(0x7f895df000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:55.004148 mprotect(0x7f89601000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:55.004289 mprotect(0x7f89622000, 4096, PROT_READ|PROT_WRITE) = 0
+18:45:55.004470 mprotect(0x7f895fe000, 4096, PROT_READ) = 0
+18:45:55.005006 mprotect(0x7f895df000, 4096, PROT_READ) = 0
+18:45:55.005402 mprotect(0x7f89601000, 4096, PROT_READ) = 0
+18:45:55.006003 mprotect(0x7f89622000, 4096, PROT_READ) = 0
+18:45:55.006270 getuid()                = 1000
+18:45:55.006458 writev(3<socket:[11566]>, [{"\0h\1c\305\262\1\302&^\0", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(libdrmfs.so, RTLD_NOW) succeeds\0", 44}], 4) = 67
+18:45:55.006807 getuid()                = 1000
+18:45:55.006984 writev(4</dev/pmsg0>, [{"lJ\0\350\3h\1", 7}, {"\0h\1c\305\262\1\302&^\0", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init dlopen(libdrmfs.so, RTLD_NOW) succeeds\0", 44}], 5) = 74
+18:45:55.007361 getuid()                = 1000
+18:45:55.007521 writev(3<socket:[11566]>, [{"\0h\1c\305\262\1\227\344o\0", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init::Init dlsym(g_FSHandle gpfs_start) succeeds\0", 49}], 4) = 72
+18:45:55.007785 getuid()                = 1000
+18:45:55.007899 writev(4</dev/pmsg0>, [{"lO\0\350\3h\1", 7}, {"\0h\1c\305\262\1\227\344o\0", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init::Init dlsym(g_FSHandle gpfs_start) succeeds\0", 49}], 5) = 79
+18:45:55.008276 getuid()                = 1000
+18:45:55.008504 writev(3<socket:[11566]>, [{"\0h\1c\305\262\1\315\207}\0", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_register_listener 28672 sb_length = 0x7e000\n\0", 53}], 4) = 78
+18:45:55.008968 getuid()                = 1000
+18:45:55.009333 writev(4</dev/pmsg0>, [{"lU\0\350\3h\1", 7}, {"\0h\1c\305\262\1\315\207}\0", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_register_listener 28672 sb_length = 0x7e000\n\0", 53}], 5) = 85
+18:45:55.009709 openat(AT_FDCWD, "/dev/qseecom", O_RDWR) = 20</dev/qseecom>
+18:45:55.011813 ioctl(20</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x0a, 0x04), 0x7feadf7748) = 0
+18:45:55.012127 openat(AT_FDCWD, "/dev/ion", O_RDONLY) = 21</dev/ion>
+18:45:55.012503 ioctl(21</dev/ion>, ION_IOC_ALLOC, 0x7feadf76c0) = 0
+18:45:55.014748 ioctl(21</dev/ion>, ION_IOC_MAP, 0x7feadf76b8) = 0
+18:45:55.014986 mmap(NULL, 516096, PROT_READ|PROT_WRITE, MAP_SHARED, 22<anon_inode:dmabuf>, 0) = 0x7f88864000
+18:45:55.015397 ioctl(20</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x01, 0x18), 0x7feadf7758) = 0
+18:45:55.015666 mmap(NULL, 1036288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f88767000
+18:45:55.015820 mprotect(0x7f88767000, 4096, PROT_NONE) = 0
+18:45:55.015959 prctl(0x53564d41 /* PR_??? */, 0, 0x7f88767000, 4096, "thread stack guard page") = 0
+18:45:55.016149 clone(child_stack=0x7f88863440, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f88863460, tls=0x7f888634e8, child_tidptr=0x7f88863460) = 365
+18:45:55.016865 futex(0x7f888634d0, FUTEX_WAKE_PRIVATE, 1) = 1
+18:45:55.017158 getuid()                = 1000
+18:45:55.017282 writev(3<socket:[11566]>, [{"\0h\1c\305\262\1\200\373\4\1", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init gpfs_start ret = 0\0", 24}], 4) = 47
+18:45:55.017654 getuid()                = 1000
+18:45:55.017815 writev(4</dev/pmsg0>, [{"l6\0\350\3h\1", 7}, {"\0h\1c\305\262\1\200\373\4\1", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"Init gpfs_start ret = 0\0", 24}], 5) = 54
+18:45:55.018351 getuid()                = 1000
+18:45:55.018530 writev(3<socket:[11566]>, [{"\0h\1c\305\262\1\376m\27\1", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"gpfile system services: Started (Listener ID = 28672)\0", 54}], 4) = 77
+18:45:55.018908 getuid()                = 1000
+18:45:55.019064 writev(4</dev/pmsg0>, [{"lT\0\350\3h\1", 7}, {"\0h\1c\305\262\1\376m\27\1", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"gpfile system services: Started (Listener ID = 28672)\0", 54}], 5) = 84
+18:45:55.019422 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC, 0) = 23<socket:[12424]>
+18:45:55.019860 connect(23<socket:[12424]>, {sa_family=AF_LOCAL, sun_path="/dev/socket/property_service"}, 31) = 0
+18:45:55.020369 sendto(23<socket:[12424]>, "\1\0\0\0sys.listeners.registered\0\0\0\0\0\0\0\0true\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 128, 0, NULL, 0) = 128
+18:45:55.020857 ppoll([{fd=23<socket:[12424]>, events=0}], 1, {0, 250000000}, NULL, 0) = 1 ([{fd=23, revents=POLLHUP}], left {0, 245798645})
+18:45:55.025309 close(23<socket:[12424]>) = 0
+18:45:55.025587 getuid()                = 1000
+18:45:55.025725 writev(3<socket:[11566]>, [{"\0h\1c\305\262\1K\257\205\1", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_get_handle sb_length = 0x400\n\0", 38}], 4) = 63
+18:45:55.026031 getuid()                = 1000
+18:45:55.026205 writev(4</dev/pmsg0>, [{"lF\0\350\3h\1", 7}, {"\0h\1c\305\262\1K\257\205\1", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_get_handle sb_length = 0x400\n\0", 38}], 5) = 70
+18:45:55.026552 openat(AT_FDCWD, "/dev/qseecom", O_RDWR) = 23</dev/qseecom>
+18:45:55.026774 ioctl(23</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x0a, 0x04), 0x7feadf7760) = 0
+18:45:55.026997 ioctl(23</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x0f, 0x44), 0x7feadf7690) = 0
+18:45:55.027243 getuid()                = 1000
+18:45:55.027412 writev(3<socket:[11566]>, [{"\0h\1c\305\262\0013\27\237\1", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"App is not loaded in QSEE\0", 26}], 4) = 51
+18:45:55.027708 getuid()                = 1000
+18:45:55.027857 writev(4</dev/pmsg0>, [{"l:\0\350\3h\1", 7}, {"\0h\1c\305\262\0013\27\237\1", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"App is not loaded in QSEE\0", 26}], 5) = 58
+18:45:55.028238 openat(AT_FDCWD, "/firmware/image/keymaste.mdt", O_RDONLY) = -1 ENOENT (No such file or directory)
+18:45:55.028442 getuid()                = 1000
+18:45:55.028555 writev(3<socket:[11566]>, [{"\0h\1c\305\262\1\21\210\261\1", 11}, {"\6", 1}, {"QSEECOMAPI: \0", 13}, {"Error::Cannot open the file /firmware/image/keymaste.mdt\n\0", 58}], 4) = 83
+18:45:55.028834 getuid()                = 1000
+18:45:55.028960 writev(4</dev/pmsg0>, [{"lZ\0\350\3h\1", 7}, {"\0h\1c\305\262\1\21\210\261\1", 11}, {"\6", 1}, {"QSEECOMAPI: \0", 13}, {"Error::Cannot open the file /firmware/image/keymaste.mdt\n\0", 58}], 5) = 90
+18:45:55.029285 getuid()                = 1000
+18:45:55.029431 writev(3<socket:[11566]>, [{"\0h\1c\305\262\1\317\231\276\1", 11}, {"\6", 1}, {"QSEECOMAPI: \0", 13}, {"Error::Loading image failed with ret = -1\0", 42}], 4) = 67
+18:45:55.029772 getuid()                = 1000
+18:45:55.029890 writev(4</dev/pmsg0>, [{"lJ\0\350\3h\1", 7}, {"\0h\1c\305\262\1\317\231\276\1", 11}, {"\6", 1}, {"QSEECOMAPI: \0", 13}, {"Error::Loading image failed with ret = -1\0", 42}], 5) = 74
+18:45:55.030261 close(23</dev/qseecom>) = 0
+18:45:55.030494 getuid()                = 1000
+18:45:55.030744 writev(3<socket:[11566]>, [{"\0h\1c\305\262\1\36\322\320\1", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Loading keymaste app failied\0", 29}], 4) = 52
+18:45:55.031145 getuid()                = 1000
+18:45:55.031344 writev(4</dev/pmsg0>, [{"l;\0\350\3h\1", 7}, {"\0h\1c\305\262\1\36\322\320\1", 11}, {"\6", 1}, {"QSEECOMD: \0", 11}, {"Loading keymaste app failied\0", 29}], 5) = 59
+18:45:55.031724 getuid()                = 1000
+18:45:55.031900 writev(3<socket:[11566]>, [{"\0h\1c\305\262\1\303\267\343\1", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_get_handle sb_length = 0x400\n\0", 38}], 4) = 63
+18:45:55.032194 getuid()                = 1000
+18:45:55.032351 writev(4</dev/pmsg0>, [{"lF\0\350\3h\1", 7}, {"\0h\1c\305\262\1\303\267\343\1", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"QSEECom_get_handle sb_length = 0x400\n\0", 38}], 5) = 70
+18:45:55.032748 openat(AT_FDCWD, "/dev/qseecom", O_RDWR) = 23</dev/qseecom>
+18:45:55.032973 ioctl(23</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x0a, 0x04), 0x7feadf7760) = 0
+18:45:55.033135 ioctl(23</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x0f, 0x44), 0x7feadf7690) = -1 EEXIST (File exists)
+18:45:55.033429 getuid()                = 1000
+18:45:55.033570 writev(3<socket:[11566]>, [{"\0h\1c\305\262\1\250\240\375\1", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"App is already loaded QSEE and app id = 3\0", 42}], 4) = 67
+18:45:55.033927 getuid()                = 1000
+18:45:55.034055 writev(4</dev/pmsg0>, [{"lJ\0\350\3h\1", 7}, {"\0h\1c\305\262\1\250\240\375\1", 11}, {"\3", 1}, {"QSEECOMAPI: \0", 13}, {"App is already loaded QSEE and app id = 3\0", 42}], 5) = 74
+18:45:55.034388 openat(AT_FDCWD, "/dev/ion", O_RDONLY) = 24</dev/ion>
+18:45:55.034751 ioctl(24</dev/ion>, ION_IOC_ALLOC, 0x7feadf76c0) = 0
+18:45:55.035821 ioctl(24</dev/ion>, ION_IOC_MAP, 0x7feadf76b8) = 0
+18:45:55.036289 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_SHARED, 25<anon_inode:dmabuf>, 0) = 0x7f895e3000
+18:45:55.036719 ioctl(23</dev/qseecom>, _IOC(_IOC_READ|_IOC_WRITE, 0x97, 0x08, 0x18), 0x7feadf7770) = 0
+18:45:55.037026 getuid()                = 1000
+18:45:55.037177 writev(3<socket:[11566]>, [{"\0h\1c\305\262\1\252\3303\2", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {" Keymaster/ kmota loaded\0", 25}], 4) = 48
+18:45:55.037616 getuid()                = 1000
+18:45:55.037765 writev(4</dev/pmsg0>, [{"l7\0\350\3h\1", 7}, {"\0h\1c\305\262\1\252\3303\2", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {" Keymaster/ kmota loaded\0", 25}], 5) = 55
+18:45:55.038540 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC, 0) = 26<socket:[10112]>
+18:45:55.038889 connect(26<socket:[10112]>, {sa_family=AF_LOCAL, sun_path="/dev/socket/property_service"}, 31) = 0
+18:45:55.039561 sendto(26<socket:[10112]>, "\1\0\0\0sys.keymaster.loaded\0\0\0\0\0\0\0\0\0\0\0\0true\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 128, 0, NULL, 0) = 128
+18:45:55.040354 ppoll([{fd=26<socket:[10112]>, events=0}], 1, {0, 250000000}, NULL, 0) = 1 ([{fd=26, revents=POLLHUP}], left {0, 247934844})
+18:45:55.043200 close(26<socket:[10112]>) = 0
+18:45:55.043456 getuid()                = 1000
+18:45:55.043585 writev(3<socket:[11566]>, [{"\0h\1c\305\262\1\310\242\226\2", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"QSEECOM DAEMON RUNNING \0", 24}], 4) = 47
+18:45:55.044196 getuid()                = 1000
+18:45:55.044524 writev(4</dev/pmsg0>, [{"l6\0\350\3h\1", 7}, {"\0h\1c\305\262\1\310\242\226\2", 11}, {"\3", 1}, {"QSEECOMD: \0", 11}, {"QSEECOM DAEMON RUNNING \0", 24}], 5) = 54
+18:45:55.046054 rt_sigprocmask(SIG_SETMASK, NULL, [], 8) = 0
+18:45:55.046364 rt_sigsuspend([], 8 <unfinished ...>
+18:46:01.804311 +++ killed by SIGKILL +++

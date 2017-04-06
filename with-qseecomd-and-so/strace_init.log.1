@@ -1,0 +1,349 @@
+18:55:07.618778 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4231500, u64=4231500}}], 1, -1, NULL, 8) = 1
+18:55:07.799999 accept4(8<socket:[1778]>, {sa_family=AF_LOCAL, NULL}, [2], 0) = 9<socket:[10809]>
+18:55:07.800368 getsockopt(9<socket:[10809]>, SOL_SOCKET, SO_PEERCRED, {pid=323, uid=0, gid=0}, [12]) = 0
+18:55:07.800565 ppoll([{fd=9<socket:[10809]>, events=POLLIN}], 1, {2, 0}, NULL, 0) = 1 ([{fd=9, revents=POLLIN}], left {1, 999995520})
+18:55:07.800782 recvfrom(9<socket:[10809]>, "\1\0\0\0vold_decrypt.symlinked_vendor\0\0\0001\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 128, MSG_DONTWAIT, NULL, NULL) = 128
+18:55:07.801066 getsockopt(9<socket:[10809]>, SOL_SOCKET, SO_PEERSEC, "u:r:recovery:s0\0", [16]) = 0
+18:55:07.801291 ppoll([{fd=10<socket:[11601]>, events=POLLIN|POLLPRI}], 1, {0, 0}, NULL, 0) = 0 (Timeout)
+18:55:07.801515 futex(0x7f9e649004, FUTEX_WAKE, 2147483647) = 0
+18:55:07.801671 close(9<socket:[10809]>) = 0
+18:55:07.801901 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4231500, u64=4231500}}], 1, -1, NULL, 8) = 1
+18:55:07.802367 accept4(8<socket:[1778]>, {sa_family=AF_LOCAL, NULL}, [2], 0) = 9<socket:[9784]>
+18:55:07.802647 getsockopt(9<socket:[9784]>, SOL_SOCKET, SO_PEERCRED, {pid=323, uid=0, gid=0}, [12]) = 0
+18:55:07.802826 ppoll([{fd=9<socket:[9784]>, events=POLLIN}], 1, {2, 0}, NULL, 0) = 1 ([{fd=9, revents=POLLIN}], left {1, 999997136})
+18:55:07.803021 recvfrom(9<socket:[9784]>, "\1\0\0\0vold_decrypt.symlinked_firmware\0001\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 128, MSG_DONTWAIT, NULL, NULL) = 128
+18:55:07.803214 getsockopt(9<socket:[9784]>, SOL_SOCKET, SO_PEERSEC, "u:r:recovery:s0\0", [16]) = 0
+18:55:07.803417 ppoll([{fd=10<socket:[11601]>, events=POLLIN|POLLPRI}], 1, {0, 0}, NULL, 0) = 0 (Timeout)
+18:55:07.803607 futex(0x7f9e649004, FUTEX_WAKE, 2147483647) = 0
+18:55:07.803750 close(9<socket:[9784]>) = 0
+18:55:07.803962 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4231500, u64=4231500}}], 1, -1, NULL, 8) = 1
+18:55:08.261310 accept4(8<socket:[1778]>, {sa_family=AF_LOCAL, NULL}, [2], 0) = 9<socket:[11644]>
+18:55:08.261663 getsockopt(9<socket:[11644]>, SOL_SOCKET, SO_PEERCRED, {pid=323, uid=0, gid=0}, [12]) = 0
+18:55:08.261852 ppoll([{fd=9<socket:[11644]>, events=POLLIN}], 1, {2, 0}, NULL, 0) = 1 ([{fd=9, revents=POLLIN}], left {1, 999994062})
+18:55:08.262089 recvfrom(9<socket:[11644]>, "\1\0\0\0ctl.start\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0sys_qseecomd\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 128, MSG_DONTWAIT, NULL, NULL) = 128
+18:55:08.262293 getsockopt(9<socket:[11644]>, SOL_SOCKET, SO_PEERSEC, "u:r:recovery:s0\0", [16]) = 0
+18:55:08.262481 close(9<socket:[11644]>) = 0
+18:55:08.262758 ppoll([{fd=10<socket:[11601]>, events=POLLIN|POLLPRI}], 1, {0, 0}, NULL, 0) = 0 (Timeout)
+18:55:08.262984 newfstatat(AT_FDCWD, "/system/bin/qseecomd", {st_dev=makedev(259, 18), st_ino=394, st_mode=S_IFREG|0755, st_nlink=1, st_uid=0, st_gid=2000, st_blksize=4096, st_blocks=32, st_size=14584, st_atime=2009/01/01-08:00:00, st_mtime=2009/01/01-08:00:00, st_ctime=2009/01/01-08:00:00}, 0) = 0
+18:55:08.263333 openat(AT_FDCWD, "/proc/self/task/1/attr/current", O_RDONLY) = 9</proc/1/task/1/attr/current>
+18:55:08.263613 read(9</proc/1/task/1/attr/current>, "u:r:init:s0\0", 4095) = 12
+18:55:08.263804 close(9</proc/1/task/1/attr/current>) = 0
+18:55:08.263979 getxattr("/system/bin/qseecomd", "security.selinux", "u:object_r:tee_exec:s0", 255) = 23
+18:55:08.264204 openat(AT_FDCWD, "/sys/fs/selinux/class/process/index", O_RDONLY) = 9</sys/fs/selinux/class/process/index>
+18:55:08.264424 read(9</sys/fs/selinux/class/process/index>, "2", 19) = 1
+18:55:08.264587 close(9</sys/fs/selinux/class/process/index>) = 0
+18:55:08.264788 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms", O_RDONLY|O_DIRECTORY|O_CLOEXEC) = 9</sys/fs/selinux/class/process/perms>
+18:55:08.265009 getdents64(9</sys/fs/selinux/class/process/perms>, [{d_ino=67111013, d_off=1, d_reclen=24, d_type=DT_DIR, d_name="."}, {d_ino=67111012, d_off=2, d_reclen=24, d_type=DT_DIR, d_name=".."}, {d_ino=67108960, d_off=3, d_reclen=40, d_type=DT_REG, d_name="setsockcreate"}, {d_ino=67108959, d_off=4, d_reclen=32, d_type=DT_REG, d_name="setkeycreate"}, {d_ino=67108958, d_off=5, d_reclen=32, d_type=DT_REG, d_name="execheap"}, {d_ino=67108957, d_off=6, d_reclen=32, d_type=DT_REG, d_name="execstack"}, {d_ino=67108956, d_off=7, d_reclen=32, d_type=DT_REG, d_name="execmem"}, {d_ino=67108955, d_off=8, d_reclen=32, d_type=DT_REG, d_name="setcurrent"}, {d_ino=67108954, d_off=9, d_reclen=40, d_type=DT_REG, d_name="dyntransition"}, {d_ino=67108953, d_off=10, d_reclen=32, d_type=DT_REG, d_name="rlimitinh"}, {d_ino=67108952, d_off=11, d_reclen=32, d_type=DT_REG, d_name="setrlimit"}, {d_ino=67108951, d_off=12, d_reclen=32, d_type=DT_REG, d_name="siginh"}, {d_ino=67108950, d_off=13, d_reclen=32, d_type=DT_REG, d_name="noatsecure"}, {d_ino=67108949, d_off=14, d_reclen=32, d_type=DT_REG, d_name="setfscreate"}, {d_ino=67108948, d_off=15, d_reclen=32, d_type=DT_REG, d_name="setexec"}, {d_ino=67108947, d_off=16, d_reclen=32, d_type=DT_REG, d_name="getattr"}, {d_ino=67108946, d_off=17, d_reclen=32, d_type=DT_REG, d_name="share"}, {d_ino=67108945, d_off=18, d_reclen=32, d_type=DT_REG, d_name="setcap"}, {d_ino=67108944, d_off=19, d_reclen=32, d_type=DT_REG, d_name="getcap"}, {d_ino=67108943, d_off=20, d_reclen=32, d_type=DT_REG, d_name="setpgid"}, {d_ino=67108942, d_off=21, d_reclen=32, d_type=DT_REG, d_name="getpgid"}, {d_ino=67108941, d_off=22, d_reclen=32, d_type=DT_REG, d_name="getsession"}, {d_ino=67108940, d_off=23, d_reclen=32, d_type=DT_REG, d_name="setsched"}, {d_ino=67108939, d_off=24, d_reclen=32, d_type=DT_REG, d_name="getsched"}, {d_ino=67108938, d_off=25, d_reclen=32, d_type=DT_REG, d_name="ptrace"}, {d_ino=67108937, d_off=26, d_reclen=32, d_type=DT_REG, d_name="signal"}, {d_ino=67108936, d_off=27, d_reclen=32, d_type=DT_REG, d_name="signull"}, {d_ino=67108935, d_off=28, d_reclen=32, d_type=DT_REG, d_name="sigstop"}, {d_ino=67108934, d_off=29, d_reclen=32, d_type=DT_REG, d_name="sigkill"}, {d_ino=67108933, d_off=30, d_reclen=32, d_type=DT_REG, d_name="sigchld"}, {d_ino=67108932, d_off=31, d_reclen=32, d_type=DT_REG, d_name="transition"}, {d_ino=67108931, d_off=32, d_reclen=24, d_type=DT_REG, d_name="fork"}], 4200) = 1016
+18:55:08.265457 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/.", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms>
+18:55:08.265717 fstat(11</sys/fs/selinux/class/process/perms>, {st_dev=makedev(0, 10), st_ino=67111013, st_mode=S_IFDIR|0555, st_nlink=2, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:55:08, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.265926 close(11</sys/fs/selinux/class/process/perms>) = 0
+18:55:08.266108 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/..", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process>
+18:55:08.266323 fstat(11</sys/fs/selinux/class/process>, {st_dev=makedev(0, 10), st_ino=67111012, st_mode=S_IFDIR|0555, st_nlink=3, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.266523 close(11</sys/fs/selinux/class/process>) = 0
+18:55:08.266703 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/setsockcreate", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/setsockcreate>
+18:55:08.266909 fstat(11</sys/fs/selinux/class/process/perms/setsockcreate>, {st_dev=makedev(0, 10), st_ino=67108960, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.267109 read(11</sys/fs/selinux/class/process/perms/setsockcreate>, "30", 19) = 2
+18:55:08.267293 close(11</sys/fs/selinux/class/process/perms/setsockcreate>) = 0
+18:55:08.267475 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/setkeycreate", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/setkeycreate>
+18:55:08.267679 fstat(11</sys/fs/selinux/class/process/perms/setkeycreate>, {st_dev=makedev(0, 10), st_ino=67108959, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.267881 read(11</sys/fs/selinux/class/process/perms/setkeycreate>, "29", 19) = 2
+18:55:08.268043 close(11</sys/fs/selinux/class/process/perms/setkeycreate>) = 0
+18:55:08.268216 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/execheap", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/execheap>
+18:55:08.268419 fstat(11</sys/fs/selinux/class/process/perms/execheap>, {st_dev=makedev(0, 10), st_ino=67108958, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.268619 read(11</sys/fs/selinux/class/process/perms/execheap>, "28", 19) = 2
+18:55:08.268783 close(11</sys/fs/selinux/class/process/perms/execheap>) = 0
+18:55:08.268971 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/execstack", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/execstack>
+18:55:08.269218 fstat(11</sys/fs/selinux/class/process/perms/execstack>, {st_dev=makedev(0, 10), st_ino=67108957, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.269439 read(11</sys/fs/selinux/class/process/perms/execstack>, "27", 19) = 2
+18:55:08.269617 close(11</sys/fs/selinux/class/process/perms/execstack>) = 0
+18:55:08.269834 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/execmem", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/execmem>
+18:55:08.270094 fstat(11</sys/fs/selinux/class/process/perms/execmem>, {st_dev=makedev(0, 10), st_ino=67108956, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.270315 read(11</sys/fs/selinux/class/process/perms/execmem>, "26", 19) = 2
+18:55:08.270496 close(11</sys/fs/selinux/class/process/perms/execmem>) = 0
+18:55:08.270709 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/setcurrent", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/setcurrent>
+18:55:08.271367 fstat(11</sys/fs/selinux/class/process/perms/setcurrent>, {st_dev=makedev(0, 10), st_ino=67108955, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.271706 read(11</sys/fs/selinux/class/process/perms/setcurrent>, "25", 19) = 2
+18:55:08.271947 close(11</sys/fs/selinux/class/process/perms/setcurrent>) = 0
+18:55:08.272180 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/dyntransition", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/dyntransition>
+18:55:08.272462 fstat(11</sys/fs/selinux/class/process/perms/dyntransition>, {st_dev=makedev(0, 10), st_ino=67108954, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.272693 read(11</sys/fs/selinux/class/process/perms/dyntransition>, "24", 19) = 2
+18:55:08.272874 close(11</sys/fs/selinux/class/process/perms/dyntransition>) = 0
+18:55:08.273317 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/rlimitinh", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/rlimitinh>
+18:55:08.274123 fstat(11</sys/fs/selinux/class/process/perms/rlimitinh>, {st_dev=makedev(0, 10), st_ino=67108953, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.274546 read(11</sys/fs/selinux/class/process/perms/rlimitinh>, "23", 19) = 2
+18:55:08.274721 close(11</sys/fs/selinux/class/process/perms/rlimitinh>) = 0
+18:55:08.274929 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/setrlimit", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/setrlimit>
+18:55:08.275163 fstat(11</sys/fs/selinux/class/process/perms/setrlimit>, {st_dev=makedev(0, 10), st_ino=67108952, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.275365 read(11</sys/fs/selinux/class/process/perms/setrlimit>, "22", 19) = 2
+18:55:08.275530 close(11</sys/fs/selinux/class/process/perms/setrlimit>) = 0
+18:55:08.275703 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/siginh", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/siginh>
+18:55:08.275915 fstat(11</sys/fs/selinux/class/process/perms/siginh>, {st_dev=makedev(0, 10), st_ino=67108951, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.276115 read(11</sys/fs/selinux/class/process/perms/siginh>, "21", 19) = 2
+18:55:08.276277 close(11</sys/fs/selinux/class/process/perms/siginh>) = 0
+18:55:08.276450 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/noatsecure", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/noatsecure>
+18:55:08.276653 fstat(11</sys/fs/selinux/class/process/perms/noatsecure>, {st_dev=makedev(0, 10), st_ino=67108950, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.276854 read(11</sys/fs/selinux/class/process/perms/noatsecure>, "20", 19) = 2
+18:55:08.277018 close(11</sys/fs/selinux/class/process/perms/noatsecure>) = 0
+18:55:08.277189 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/setfscreate", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/setfscreate>
+18:55:08.277394 fstat(11</sys/fs/selinux/class/process/perms/setfscreate>, {st_dev=makedev(0, 10), st_ino=67108949, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.277595 read(11</sys/fs/selinux/class/process/perms/setfscreate>, "19", 19) = 2
+18:55:08.277759 close(11</sys/fs/selinux/class/process/perms/setfscreate>) = 0
+18:55:08.277930 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/setexec", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/setexec>
+18:55:08.278744 fstat(11</sys/fs/selinux/class/process/perms/setexec>, {st_dev=makedev(0, 10), st_ino=67108948, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.279827 read(11</sys/fs/selinux/class/process/perms/setexec>, "18", 19) = 2
+18:55:08.280204 close(11</sys/fs/selinux/class/process/perms/setexec>) = 0
+18:55:08.280416 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/getattr", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/getattr>
+18:55:08.280654 fstat(11</sys/fs/selinux/class/process/perms/getattr>, {st_dev=makedev(0, 10), st_ino=67108947, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.280921 read(11</sys/fs/selinux/class/process/perms/getattr>, "17", 19) = 2
+18:55:08.281106 close(11</sys/fs/selinux/class/process/perms/getattr>) = 0
+18:55:08.281319 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/share", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/share>
+18:55:08.281542 fstat(11</sys/fs/selinux/class/process/perms/share>, {st_dev=makedev(0, 10), st_ino=67108946, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.281745 read(11</sys/fs/selinux/class/process/perms/share>, "16", 19) = 2
+18:55:08.281908 close(11</sys/fs/selinux/class/process/perms/share>) = 0
+18:55:08.282084 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/setcap", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/setcap>
+18:55:08.282294 fstat(11</sys/fs/selinux/class/process/perms/setcap>, {st_dev=makedev(0, 10), st_ino=67108945, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.282493 read(11</sys/fs/selinux/class/process/perms/setcap>, "15", 19) = 2
+18:55:08.282656 close(11</sys/fs/selinux/class/process/perms/setcap>) = 0
+18:55:08.282825 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/getcap", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/getcap>
+18:55:08.283032 fstat(11</sys/fs/selinux/class/process/perms/getcap>, {st_dev=makedev(0, 10), st_ino=67108944, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.283232 read(11</sys/fs/selinux/class/process/perms/getcap>, "14", 19) = 2
+18:55:08.283394 close(11</sys/fs/selinux/class/process/perms/getcap>) = 0
+18:55:08.283562 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/setpgid", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/setpgid>
+18:55:08.283766 fstat(11</sys/fs/selinux/class/process/perms/setpgid>, {st_dev=makedev(0, 10), st_ino=67108943, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.283965 read(11</sys/fs/selinux/class/process/perms/setpgid>, "13", 19) = 2
+18:55:08.284127 close(11</sys/fs/selinux/class/process/perms/setpgid>) = 0
+18:55:08.284297 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/getpgid", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/getpgid>
+18:55:08.284499 fstat(11</sys/fs/selinux/class/process/perms/getpgid>, {st_dev=makedev(0, 10), st_ino=67108942, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.284697 read(11</sys/fs/selinux/class/process/perms/getpgid>, "12", 19) = 2
+18:55:08.284859 close(11</sys/fs/selinux/class/process/perms/getpgid>) = 0
+18:55:08.285031 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/getsession", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/getsession>
+18:55:08.285233 fstat(11</sys/fs/selinux/class/process/perms/getsession>, {st_dev=makedev(0, 10), st_ino=67108941, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.285432 read(11</sys/fs/selinux/class/process/perms/getsession>, "11", 19) = 2
+18:55:08.285596 close(11</sys/fs/selinux/class/process/perms/getsession>) = 0
+18:55:08.285768 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/setsched", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/setsched>
+18:55:08.285970 fstat(11</sys/fs/selinux/class/process/perms/setsched>, {st_dev=makedev(0, 10), st_ino=67108940, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.286181 read(11</sys/fs/selinux/class/process/perms/setsched>, "10", 19) = 2
+18:55:08.286343 close(11</sys/fs/selinux/class/process/perms/setsched>) = 0
+18:55:08.286511 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/getsched", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/getsched>
+18:55:08.286713 fstat(11</sys/fs/selinux/class/process/perms/getsched>, {st_dev=makedev(0, 10), st_ino=67108939, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.286912 read(11</sys/fs/selinux/class/process/perms/getsched>, "9", 19) = 1
+18:55:08.287073 close(11</sys/fs/selinux/class/process/perms/getsched>) = 0
+18:55:08.287242 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/ptrace", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/ptrace>
+18:55:08.287446 fstat(11</sys/fs/selinux/class/process/perms/ptrace>, {st_dev=makedev(0, 10), st_ino=67108938, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.287646 read(11</sys/fs/selinux/class/process/perms/ptrace>, "8", 19) = 1
+18:55:08.287808 close(11</sys/fs/selinux/class/process/perms/ptrace>) = 0
+18:55:08.287977 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/signal", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/signal>
+18:55:08.288179 fstat(11</sys/fs/selinux/class/process/perms/signal>, {st_dev=makedev(0, 10), st_ino=67108937, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.288378 read(11</sys/fs/selinux/class/process/perms/signal>, "7", 19) = 1
+18:55:08.288540 close(11</sys/fs/selinux/class/process/perms/signal>) = 0
+18:55:08.288709 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/signull", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/signull>
+18:55:08.288924 fstat(11</sys/fs/selinux/class/process/perms/signull>, {st_dev=makedev(0, 10), st_ino=67108936, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.289308 read(11</sys/fs/selinux/class/process/perms/signull>, "6", 19) = 1
+18:55:08.289483 close(11</sys/fs/selinux/class/process/perms/signull>) = 0
+18:55:08.289684 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/sigstop", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/sigstop>
+18:55:08.289914 fstat(11</sys/fs/selinux/class/process/perms/sigstop>, {st_dev=makedev(0, 10), st_ino=67108935, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.290114 read(11</sys/fs/selinux/class/process/perms/sigstop>, "5", 19) = 1
+18:55:08.290276 close(11</sys/fs/selinux/class/process/perms/sigstop>) = 0
+18:55:08.290449 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/sigkill", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/sigkill>
+18:55:08.290659 fstat(11</sys/fs/selinux/class/process/perms/sigkill>, {st_dev=makedev(0, 10), st_ino=67108934, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.291506 read(11</sys/fs/selinux/class/process/perms/sigkill>, "4", 19) = 1
+18:55:08.291925 close(11</sys/fs/selinux/class/process/perms/sigkill>) = 0
+18:55:08.292159 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/sigchld", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/sigchld>
+18:55:08.292395 fstat(11</sys/fs/selinux/class/process/perms/sigchld>, {st_dev=makedev(0, 10), st_ino=67108933, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.292614 read(11</sys/fs/selinux/class/process/perms/sigchld>, "3", 19) = 1
+18:55:08.292778 close(11</sys/fs/selinux/class/process/perms/sigchld>) = 0
+18:55:08.292952 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/transition", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/transition>
+18:55:08.293159 fstat(11</sys/fs/selinux/class/process/perms/transition>, {st_dev=makedev(0, 10), st_ino=67108932, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.293436 read(11</sys/fs/selinux/class/process/perms/transition>, "2", 19) = 1
+18:55:08.293605 close(11</sys/fs/selinux/class/process/perms/transition>) = 0
+18:55:08.293784 openat(AT_FDCWD, "/sys/fs/selinux/class/process/perms/fork", O_RDONLY|O_CLOEXEC) = 11</sys/fs/selinux/class/process/perms/fork>
+18:55:08.294000 fstat(11</sys/fs/selinux/class/process/perms/fork>, {st_dev=makedev(0, 10), st_ino=67108931, st_mode=S_IFREG|0444, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1970/11/26-18:54:41, st_mtime=1970/11/26-18:54:41, st_ctime=1970/11/26-18:54:41}) = 0
+18:55:08.294194 read(11</sys/fs/selinux/class/process/perms/fork>, "1", 19) = 1
+18:55:08.294360 close(11</sys/fs/selinux/class/process/perms/fork>) = 0
+18:55:08.294529 getdents64(9</sys/fs/selinux/class/process/perms>, [], 4200) = 0
+18:55:08.294708 close(9</sys/fs/selinux/class/process/perms>) = 0
+18:55:08.294886 openat(AT_FDCWD, "/sys/fs/selinux/create", O_RDWR) = 9</sys/fs/selinux/create>
+18:55:08.295096 write(9</sys/fs/selinux/create>, "u:r:init:s0 u:object_r:tee_exec:s0 2", 36) = 36
+18:55:08.295424 read(9</sys/fs/selinux/create>, "u:r:tee:s0\0", 4095) = 11
+18:55:08.295595 close(9</sys/fs/selinux/create>) = 0
+18:55:08.295776 writev(3</dev/__kmsg__ (deleted)>, [{"<5>init: ", 9}, {"Starting service 'sys_qseecomd'...\n", 35}], 2) = 44
+18:55:08.296050 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x529dc8) = 366
+18:55:08.296801 futex(0x7f9e649004, FUTEX_WAKE, 2147483647) = 0
+18:55:08.297091 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4231500, u64=4231500}}], 1, -1, NULL, 8) = 1
+18:55:08.463976 accept4(8<socket:[1778]>, {sa_family=AF_LOCAL, NULL}, [2], 0) = 9<socket:[9800]>
+18:55:08.464429 getsockopt(9<socket:[9800]>, SOL_SOCKET, SO_PEERCRED, {pid=323, uid=0, gid=0}, [12]) = 0
+18:55:08.464680 ppoll([{fd=9<socket:[9800]>, events=POLLIN}], 1, {2, 0}, NULL, 0) = 1 ([{fd=9, revents=POLLIN}], left {1, 999992448})
+18:55:08.464892 recvfrom(9<socket:[9800]>, "\1\0\0\0ctl.start\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0sys_vold\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 128, MSG_DONTWAIT, NULL, NULL) = 128
+18:55:08.465102 getsockopt(9<socket:[9800]>, SOL_SOCKET, SO_PEERSEC, "u:r:recovery:s0\0", [16]) = 0
+18:55:08.465338 close(9<socket:[9800]>) = 0
+18:55:08.465589 ppoll([{fd=10<socket:[11601]>, events=POLLIN|POLLPRI}], 1, {0, 0}, NULL, 0) = 0 (Timeout)
+18:55:08.465795 newfstatat(AT_FDCWD, "/system/bin/vold", {st_dev=makedev(259, 18), st_ino=510, st_mode=S_IFREG|0755, st_nlink=1, st_uid=0, st_gid=2000, st_blksize=4096, st_blocks=1448, st_size=740352, st_atime=2009/01/01-08:00:00, st_mtime=2009/01/01-08:00:00, st_ctime=2009/01/01-08:00:00}, 0) = 0
+18:55:08.466128 openat(AT_FDCWD, "/proc/self/task/1/attr/current", O_RDONLY) = 9</proc/1/task/1/attr/current>
+18:55:08.466351 read(9</proc/1/task/1/attr/current>, "u:r:init:s0\0", 4095) = 12
+18:55:08.466576 close(9</proc/1/task/1/attr/current>) = 0
+18:55:08.466798 getxattr("/system/bin/vold", "security.selinux", "u:object_r:vold_exec:s0", 255) = 24
+18:55:08.467064 openat(AT_FDCWD, "/sys/fs/selinux/create", O_RDWR) = 9</sys/fs/selinux/create>
+18:55:08.467301 write(9</sys/fs/selinux/create>, "u:r:init:s0 u:object_r:vold_exec:s0 2", 37) = 37
+18:55:08.467663 read(9</sys/fs/selinux/create>, "u:r:vold:s0\0", 4095) = 12
+18:55:08.467863 close(9</sys/fs/selinux/create>) = 0
+18:55:08.468023 writev(3</dev/__kmsg__ (deleted)>, [{"<5>init: ", 9}, {"Starting service 'sys_vold'...\n", 31}], 2) = 40
+18:55:08.468265 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x529dc8) = 367
+18:55:08.469577 futex(0x7f9e649004, FUTEX_WAKE, 2147483647) = 0
+18:55:08.470128 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4231500, u64=4231500}}], 1, -1, NULL, 8) = 1
+18:55:08.639955 accept4(8<socket:[1778]>, {sa_family=AF_LOCAL, NULL}, [2], 0) = 9<socket:[12509]>
+18:55:08.640432 getsockopt(9<socket:[12509]>, SOL_SOCKET, SO_PEERCRED, {pid=368, uid=1000, gid=1000}, [12]) = 0
+18:55:08.640644 ppoll([{fd=9<socket:[12509]>, events=POLLIN}], 1, {2, 0}, NULL, 0) = 1 ([{fd=9, revents=POLLIN}], left {1, 999997240})
+18:55:08.641016 recvfrom(9<socket:[12509]>, "\1\0\0\0sys.listeners.registered\0\0\0\0\0\0\0\0true\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 128, MSG_DONTWAIT, NULL, NULL) = 128
+18:55:08.641272 getsockopt(9<socket:[12509]>, SOL_SOCKET, SO_PEERSEC, "u:r:tee:s0\0", [11]) = 0
+18:55:08.641518 ppoll([{fd=10<socket:[11601]>, events=POLLIN|POLLPRI}], 1, {0, 0}, NULL, 0) = 0 (Timeout)
+18:55:08.641850 openat(AT_FDCWD, "/sys/fs/selinux/access", O_RDWR) = 11</sys/fs/selinux/access>
+18:55:08.642103 write(11</sys/fs/selinux/access>, "u:r:tee:s0 u:object_r:system_prop:s0 59 1", 41) = 41
+18:55:08.642417 read(11</sys/fs/selinux/access>, "0 ffffffff 0 ffffffff 1 0", 4095) = 25
+18:55:08.642609 close(11</sys/fs/selinux/access>) = 0
+18:55:08.642847 writev(3</dev/__kmsg__ (deleted)>, [{"<3>init: ", 9}, {"avc:  denied  { set } for property=sys.listeners.registered scontext=u:r:tee:s0 tcontext=u:object_r:system_prop:s0 tclass=property_service\n", 139}], 2) = 148
+18:55:08.643142 futex(0x7f9e64d978, FUTEX_WAKE, 2147483647) = 0
+18:55:08.643376 futex(0x7f9e649004, FUTEX_WAKE, 2147483647) = 0
+18:55:08.643559 close(9<socket:[12509]>) = 0
+18:55:08.644504 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4231500, u64=4231500}}], 1, -1, NULL, 8) = 1
+18:55:08.659067 accept4(8<socket:[1778]>, {sa_family=AF_LOCAL, NULL}, [2], 0) = 9<socket:[10849]>
+18:55:08.659468 getsockopt(9<socket:[10849]>, SOL_SOCKET, SO_PEERCRED, {pid=368, uid=1000, gid=1000}, [12]) = 0
+18:55:08.659668 ppoll([{fd=9<socket:[10849]>, events=POLLIN}], 1, {2, 0}, NULL, 0) = 1 ([{fd=9, revents=POLLIN}], left {1, 999992813})
+18:55:08.659901 recvfrom(9<socket:[10849]>, "\1\0\0\0sys.keymaster.loaded\0\0\0\0\0\0\0\0\0\0\0\0true\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 128, MSG_DONTWAIT, NULL, NULL) = 128
+18:55:08.660139 getsockopt(9<socket:[10849]>, SOL_SOCKET, SO_PEERSEC, "u:r:tee:s0\0", [11]) = 0
+18:55:08.660383 ppoll([{fd=10<socket:[11601]>, events=POLLIN|POLLPRI}], 1, {0, 0}, NULL, 0) = 0 (Timeout)
+18:55:08.661120 futex(0x7f9e64da30, FUTEX_WAKE, 2147483647) = 0
+18:55:08.661406 futex(0x7f9e649004, FUTEX_WAKE, 2147483647) = 0
+18:55:08.661573 close(9<socket:[10849]>) = 0
+18:55:08.662200 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4231500, u64=4231500}}], 1, -1, NULL, 8) = 1
+18:55:08.964305 accept4(8<socket:[1778]>, {sa_family=AF_LOCAL, NULL}, [2], 0) = 9<socket:[11696]>
+18:55:08.964681 getsockopt(9<socket:[11696]>, SOL_SOCKET, SO_PEERCRED, {pid=367, uid=0, gid=0}, [12]) = 0
+18:55:08.964865 ppoll([{fd=9<socket:[11696]>, events=POLLIN}], 1, {2, 0}, NULL, 0) = 1 ([{fd=9, revents=POLLIN}], left {1, 999996614})
+18:55:08.965066 recvfrom(9<socket:[11696]>, "\1\0\0\0vold.has_adoptable\0\0\0\0\0\0\0\0\0\0\0\0\0\0000\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 128, MSG_DONTWAIT, NULL, NULL) = 128
+18:55:08.965281 getsockopt(9<socket:[11696]>, SOL_SOCKET, SO_PEERSEC, "u:r:vold:s0\0", [12]) = 0
+18:55:08.965508 ppoll([{fd=10<socket:[11601]>, events=POLLIN|POLLPRI}], 1, {0, 0}, NULL, 0) = 0 (Timeout)
+18:55:08.965708 openat(AT_FDCWD, "/sys/fs/selinux/access", O_RDWR) = 11</sys/fs/selinux/access>
+18:55:08.965953 write(11</sys/fs/selinux/access>, "u:r:vold:s0 u:object_r:vold_prop:s0 59 1", 40) = 40
+18:55:08.966266 read(11</sys/fs/selinux/access>, "1 ffffffff 0 ffffffff 1 0", 4095) = 25
+18:55:08.966452 close(11</sys/fs/selinux/access>) = 0
+18:55:08.966648 futex(0x7f9e649004, FUTEX_WAKE, 2147483647) = 0
+18:55:08.966809 close(9<socket:[11696]>) = 0
+18:55:08.967122 epoll_pwait(5<anon_inode:[eventpoll]>, 0x7ff97f9010, 1, -1, NULL, 8) = -1 EINTR (Interrupted system call)
+18:55:09.784606 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=379, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+18:55:09.784771 write(6<socket:[1776]>, "1", 1) = 1
+18:55:09.785776 rt_sigreturn({mask=[]}) = -1 EINTR (Interrupted system call)
+18:55:09.786036 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4234424, u64=4234424}}], 1, -1, NULL, 8) = 1
+18:55:09.786320 read(7<socket:[1777]>, "1", 32) = 1
+18:55:09.786693 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 379
+18:55:09.787238 writev(3</dev/__kmsg__ (deleted)>, [{"<5>init: ", 9}, {"Untracked pid 379 exited with status 0\n", 39}], 2) = 48
+18:55:09.787523 wait4(-1, 0x7ff97f8ed4, WNOHANG, NULL) = 0
+18:55:09.787764 epoll_pwait(5<anon_inode:[eventpoll]>, 0x7ff97f9010, 1, -1, NULL, 8) = -1 EINTR (Interrupted system call)
+18:55:11.090513 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=388, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:55:11.090616 write(6<socket:[1776]>, "1", 1) = 1
+18:55:11.091013 rt_sigreturn({mask=[]}) = -1 EINTR (Interrupted system call)
+18:55:11.091222 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4234424, u64=4234424}}], 1, -1, NULL, 8) = 1
+18:55:11.091492 read(7<socket:[1777]>, "1", 32) = 1
+18:55:11.092007 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 388
+18:55:11.092864 writev(3</dev/__kmsg__ (deleted)>, [{"<5>init: ", 9}, {"Untracked pid 388 exited with status 0\n", 39}], 2) = 48
+18:55:11.093272 wait4(-1, 0x7ff97f8ed4, WNOHANG, NULL) = 0
+18:55:11.093438 epoll_pwait(5<anon_inode:[eventpoll]>, 0x7ff97f9010, 1, -1, NULL, 8) = -1 EINTR (Interrupted system call)
+18:55:15.219552 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=394, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:55:15.219652 write(6<socket:[1776]>, "1", 1) = 1
+18:55:15.219935 rt_sigreturn({mask=[]}) = -1 EINTR (Interrupted system call)
+18:55:15.220100 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4234424, u64=4234424}}], 1, -1, NULL, 8) = 1
+18:55:15.220360 read(7<socket:[1777]>, "1", 32) = 1
+18:55:15.220628 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 394
+18:55:15.222697 writev(3</dev/__kmsg__ (deleted)>, [{"<5>init: ", 9}, {"Untracked pid 394 exited with status 0\n", 39}], 2) = 48
+18:55:15.223206 wait4(-1, 0x7ff97f8ed4, WNOHANG, NULL) = 0
+18:55:15.224330 epoll_pwait(5<anon_inode:[eventpoll]>, 0x7ff97f9010, 1, -1, NULL, 8) = -1 EINTR (Interrupted system call)
+18:55:19.330359 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=401, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:55:19.330515 write(6<socket:[1776]>, "1", 1) = 1
+18:55:19.330851 rt_sigreturn({mask=[]}) = -1 EINTR (Interrupted system call)
+18:55:19.331010 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4234424, u64=4234424}}], 1, -1, NULL, 8) = 1
+18:55:19.331220 read(7<socket:[1777]>, "1", 32) = 1
+18:55:19.331440 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 401
+18:55:19.331734 writev(3</dev/__kmsg__ (deleted)>, [{"<5>init: ", 9}, {"Untracked pid 401 exited with status 0\n", 39}], 2) = 48
+18:55:19.331981 wait4(-1, 0x7ff97f8ed4, WNOHANG, NULL) = 0
+18:55:19.332134 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4231500, u64=4231500}}], 1, -1, NULL, 8) = 1
+18:55:19.333177 accept4(8<socket:[1778]>, {sa_family=AF_LOCAL, NULL}, [2], 0) = 9<socket:[11732]>
+18:55:19.333601 getsockopt(9<socket:[11732]>, SOL_SOCKET, SO_PEERCRED, {pid=323, uid=0, gid=0}, [12]) = 0
+18:55:19.333786 ppoll([{fd=9<socket:[11732]>, events=POLLIN}], 1, {2, 0}, NULL, 0) = 1 ([{fd=9, revents=POLLIN}], left {1, 999996718})
+18:55:19.333989 recvfrom(9<socket:[11732]>, "\1\0\0\0ctl.stop\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0sys_vold\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 128, MSG_DONTWAIT, NULL, NULL) = 128
+18:55:19.334190 getsockopt(9<socket:[11732]>, SOL_SOCKET, SO_PEERSEC, "u:r:recovery:s0\0", [16]) = 0
+18:55:19.334380 close(9<socket:[11732]>) = 0
+18:55:19.334732 ppoll([{fd=10<socket:[11601]>, events=POLLIN|POLLPRI}], 1, {0, 0}, NULL, 0) = 0 (Timeout)
+18:55:19.334941 writev(3</dev/__kmsg__ (deleted)>, [{"<5>init: ", 9}, {"Service 'sys_vold' is being killed...\n", 38}], 2) = 47
+18:55:19.335152 kill(4294966929, SIGKILL) = 0
+18:55:19.335797 futex(0x7f9e64dcd8, FUTEX_WAKE, 2147483647) = 0
+18:55:19.335944 futex(0x7f9e649004, FUTEX_WAKE, 2147483647) = 0
+18:55:19.336100 epoll_pwait(5<anon_inode:[eventpoll]>, 0x7ff97f9010, 1, -1, NULL, 8) = -1 EINTR (Interrupted system call)
+18:55:19.339805 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=367, si_uid=0, si_status=SIGKILL, si_utime=398, si_stime=217} ---
+18:55:19.339956 write(6<socket:[1776]>, "1", 1) = 1
+18:55:19.340260 rt_sigreturn({mask=[]}) = -1 EINTR (Interrupted system call)
+18:55:19.340406 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4234424, u64=4234424}}], 1, -1, NULL, 8) = 1
+18:55:19.340601 read(7<socket:[1777]>, "1", 32) = 1
+18:55:19.340874 wait4(-1, [{WIFSIGNALED(s) && WTERMSIG(s) == SIGKILL}], WNOHANG, NULL) = 367
+18:55:19.342700 writev(3</dev/__kmsg__ (deleted)>, [{"<5>init: ", 9}, {"Service 'sys_vold' (pid 367) killed by signal 9\n", 48}], 2) = 57
+18:55:19.343010 unlinkat(AT_FDCWD, "/dev/socket/cryptd", 0) = 0
+18:55:19.343269 unlinkat(AT_FDCWD, "/dev/socket/vold", 0) = 0
+18:55:19.343484 futex(0x7f9e64dcd8, FUTEX_WAKE, 2147483647) = 0
+18:55:19.343627 futex(0x7f9e649004, FUTEX_WAKE, 2147483647) = 0
+18:55:19.343776 wait4(-1, 0x7ff97f8ed4, WNOHANG, NULL) = 0
+18:55:19.343924 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4231500, u64=4231500}}], 1, -1, NULL, 8) = 1
+18:55:19.535407 accept4(8<socket:[1778]>, {sa_family=AF_LOCAL, NULL}, [2], 0) = 9<socket:[12595]>
+18:55:19.535747 getsockopt(9<socket:[12595]>, SOL_SOCKET, SO_PEERCRED, {pid=323, uid=0, gid=0}, [12]) = 0
+18:55:19.535940 ppoll([{fd=9<socket:[12595]>, events=POLLIN}], 1, {2, 0}, NULL, 0) = 1 ([{fd=9, revents=POLLIN}], left {1, 999982448})
+18:55:19.536846 recvfrom(9<socket:[12595]>, "\1\0\0\0ctl.stop\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0sys_qseecomd\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 128, MSG_DONTWAIT, NULL, NULL) = 128
+18:55:19.537885 getsockopt(9<socket:[12595]>, SOL_SOCKET, SO_PEERSEC, "u:r:recovery:s0\0", [16]) = 0
+18:55:19.538236 close(9<socket:[12595]>) = 0
+18:55:19.538663 ppoll([{fd=10<socket:[11601]>, events=POLLIN|POLLPRI}], 1, {0, 0}, NULL, 0) = 0 (Timeout)
+18:55:19.538907 writev(3</dev/__kmsg__ (deleted)>, [{"<5>init: ", 9}, {"Service 'sys_qseecomd' is being killed...\n", 42}], 2) = 51
+18:55:19.539129 kill(4294966930, SIGKILL) = 0
+18:55:19.539922 futex(0x7f9e64dc40, FUTEX_WAKE, 2147483647) = 0
+18:55:19.540090 futex(0x7f9e649004, FUTEX_WAKE, 2147483647) = 0
+18:55:19.540253 epoll_pwait(5<anon_inode:[eventpoll]>, 0x7ff97f9010, 1, -1, NULL, 8) = -1 EINTR (Interrupted system call)
+18:55:19.544383 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=368, si_uid=1000, si_status=SIGKILL, si_utime=1, si_stime=4} ---
+18:55:19.544475 write(6<socket:[1776]>, "1", 1) = 1
+18:55:19.544738 rt_sigreturn({mask=[]}) = -1 EINTR (Interrupted system call)
+18:55:19.544891 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4234424, u64=4234424}}], 1, -1, NULL, 8) = 1
+18:55:19.545077 read(7<socket:[1777]>, "1", 32) = 1
+18:55:19.545268 wait4(-1, [{WIFSIGNALED(s) && WTERMSIG(s) == SIGKILL}], WNOHANG, NULL) = 366
+18:55:19.545722 writev(3</dev/__kmsg__ (deleted)>, [{"<5>init: ", 9}, {"Service 'sys_qseecomd' (pid 366) killed by signal 9\n", 52}], 2) = 61
+18:55:19.545956 futex(0x7f9e64dc40, FUTEX_WAKE, 2147483647) = 0
+18:55:19.546089 futex(0x7f9e649004, FUTEX_WAKE, 2147483647) = 0
+18:55:19.546230 wait4(-1, [{WIFSIGNALED(s) && WTERMSIG(s) == SIGKILL}], WNOHANG, NULL) = 368
+18:55:19.547139 writev(3</dev/__kmsg__ (deleted)>, [{"<5>init: ", 9}, {"Untracked pid 368 killed by signal 9\n", 37}], 2) = 46
+18:55:19.547435 wait4(-1, 0x7ff97f8ed4, WNOHANG, NULL) = 0
+18:55:19.547575 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4231500, u64=4231500}}], 1, -1, NULL, 8) = 1
+18:55:19.739450 accept4(8<socket:[1778]>, {sa_family=AF_LOCAL, NULL}, [2], 0) = 9<socket:[11734]>
+18:55:19.740147 getsockopt(9<socket:[11734]>, SOL_SOCKET, SO_PEERCRED, {pid=323, uid=0, gid=0}, [12]) = 0
+18:55:19.740350 ppoll([{fd=9<socket:[11734]>, events=POLLIN}], 1, {2, 0}, NULL, 0) = 1 ([{fd=9, revents=POLLIN}], left {1, 999992448})
+18:55:19.740565 recvfrom(9<socket:[11734]>, "\1\0\0\0vold_decrypt.symlinked_firmware\0000\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 128, MSG_DONTWAIT, NULL, NULL) = 128
+18:55:19.740771 getsockopt(9<socket:[11734]>, SOL_SOCKET, SO_PEERSEC, "u:r:recovery:s0\0", [16]) = 0
+18:55:19.741126 ppoll([{fd=10<socket:[11601]>, events=POLLIN|POLLPRI}], 1, {0, 0}, NULL, 0) = 0 (Timeout)
+18:55:19.741336 futex(0x7f9e64db9c, FUTEX_WAKE, 2147483647) = 0
+18:55:19.741479 futex(0x7f9e649004, FUTEX_WAKE, 2147483647) = 0
+18:55:19.741627 close(9<socket:[11734]>) = 0
+18:55:19.741874 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4231500, u64=4231500}}], 1, -1, NULL, 8) = 1
+18:55:19.742429 accept4(8<socket:[1778]>, {sa_family=AF_LOCAL, NULL}, [2], 0) = 9<socket:[12597]>
+18:55:19.742715 getsockopt(9<socket:[12597]>, SOL_SOCKET, SO_PEERCRED, {pid=323, uid=0, gid=0}, [12]) = 0
+18:55:19.742903 ppoll([{fd=9<socket:[12597]>, events=POLLIN}], 1, {2, 0}, NULL, 0) = 1 ([{fd=9, revents=POLLIN}], left {1, 999996146})
+18:55:19.743113 recvfrom(9<socket:[12597]>, "\1\0\0\0vold_decrypt.symlinked_vendor\0\0\0000\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 128, MSG_DONTWAIT, NULL, NULL) = 128
+18:55:19.743309 getsockopt(9<socket:[12597]>, SOL_SOCKET, SO_PEERSEC, "u:r:recovery:s0\0", [16]) = 0
+18:55:19.743514 ppoll([{fd=10<socket:[11601]>, events=POLLIN|POLLPRI}], 1, {0, 0}, NULL, 0) = 0 (Timeout)
+18:55:19.744126 futex(0x7f9e64daf4, FUTEX_WAKE, 2147483647) = 0
+18:55:19.744861 futex(0x7f9e649004, FUTEX_WAKE, 2147483647) = 0
+18:55:19.745519 close(9<socket:[12597]>) = 0
+18:55:19.745881 epoll_pwait(5<anon_inode:[eventpoll]>, [{EPOLLIN, {u32=4231500, u64=4231500}}], 1, -1, NULL, 8) = 1
+18:55:19.785873 accept4(8<socket:[1778]>, {sa_family=AF_LOCAL, NULL}, [2], 0) = 9<socket:[11744]>
+18:55:19.786214 getsockopt(9<socket:[11744]>, SOL_SOCKET, SO_PEERCRED, {pid=323, uid=0, gid=0}, [12]) = 0
+18:55:19.786405 ppoll([{fd=9<socket:[11744]>, events=POLLIN}], 1, {2, 0}, NULL, 0) = 1 ([{fd=9, revents=POLLIN}], left {1, 999996302})
+18:55:19.786616 recvfrom(9<socket:[11744]>, "\1\0\0\0ctl.start\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0sbinqseecomd\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 128, MSG_DONTWAIT, NULL, NULL) = 128
+18:55:19.786816 getsockopt(9<socket:[11744]>, SOL_SOCKET, SO_PEERSEC, "u:r:recovery:s0\0", [16]) = 0
+18:55:19.787011 close(9<socket:[11744]>) = 0
+18:55:19.787260 ppoll([{fd=10<socket:[11601]>, events=POLLIN|POLLPRI}], 1, {0, 0}, NULL, 0) = 0 (Timeout)
+18:55:19.787486 newfstatat(AT_FDCWD, "/sbin/qseecomd", {st_dev=makedev(0, 1), st_ino=9396, st_mode=S_IFREG|0750, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=32, st_size=14584, st_atime=1970/11/26-18:54:56, st_mtime=0, st_ctime=1970/01/01-00:00:01}, 0) = 0
+18:55:19.787710 writev(3</dev/__kmsg__ (deleted)>, [{"<5>init: ", 9}, {"Starting service 'sbinqseecomd'...\n", 35}], 2) = 44
+18:55:19.787929 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x529dc8) = 404
+18:55:19.788657 futex(0x7f9e64d8c0, FUTEX_WAKE, 2147483647) = 0
+18:55:19.789189 futex(0x7f9e649004, FUTEX_WAKE, 2147483647) = 0
+18:55:19.790282 epoll_pwait(5<anon_inode:[eventpoll]>,  <detached ...>

@@ -1,0 +1,622 @@
+__bionic_open_tzdata: couldn't find any tzdata when looking for GMT!
+Starting TWRP 3.1.0-0-76958ae9 on Thu Nov 26 18:54:43 1970
+ (pid 323)
+BOARD_HAS_NO_REAL_SDCARD := true
+RECOVERY_SDCARD_ON_DATA := true
+I:Lun file '/sys/class/android_usb/android0/f_mass_storage/lun0/file'
+TW_INCLUDE_CRYPTO := true
+I:Find_File: Error opening '/sys/class/backlight'
+I:Found brightness file at '/sys/class/leds/lcd-backlight/brightness'
+I:Got max brightness 255 from '/sys/class/leds/lcd-backlight/max_brightness'
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+I:LANG: en
+Starting the UI...
+setting DRM_FORMAT_RGBX8888 and GGL_PIXEL_FORMAT_RGBX_8888
+cannot find/open a drm device: No such file or directory
+fb0 reports (possibly inaccurate):
+  vi.bits_per_pixel = 32
+  vi.red.offset   =   0   .length =   8
+  vi.green.offset =   8   .length =   8
+  vi.blue.offset  =  16   .length =   8
+setting GGL_PIXEL_FORMAT_RGBA_8888
+double buffered
+framebuffer: 0 (1080 x 1920)
+Using fbdev graphics.
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+I:Loading package: splash (/twres/splash.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/splash.xml' directly
+I:Checking resolution...
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page splash
+I:Switching packages (splash)
+=> Linking mtab
+=> Processing recovery.fstab
+I:Processing '/boot'
+I:Processing '/system'
+I:Processing '/system_image'
+I:Processing '/data'
+I:Processing '/cache'
+I:Processing '/recovery'
+I:Processing '/efs1'
+I:Processing '/efs2'
+I:Processing '/securefs'
+I:Created '/securefs' folder.
+I:Processing '/BBSYS'
+I:Created '/BBSYS' folder.
+I:Processing '/misc'
+I:Processing '/usb-otg'
+I:Created '/usb-otg' folder.
+I:Setting up '/data' as data/media emulated storage.
+I:Can't probe device /dev/block/mmcblk0p52
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p52', current file system: 'ext4'
+I:Can't probe device /dev/block/mmcblk0p52
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p52', current file system: 'ext4'
+get_crypt_ftr_info crypto key location: 'footer'
+I:Backup folder set to '/data/media/TWRP/BACKUPS/NBQGLMB630302015'
+I:Settings storage is '/data/media'
+Updating partition details...
+I:Unable to mount '/usb-otg'
+I:Actual block device: '', current file system: 'vfat'
+...done
+Unable to mount storage
+I:Unmounting main partitions...
+
+
+Partition Logs:
+/boot | /dev/block/mmcblk0p44 | Size: 40MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p44
+   Display_Name: Boot
+   Storage_Name: boot
+   Backup_Path: /boot
+   Backup_Name: boot
+   Backup_Display_Name: Boot
+   Storage_Path: /boot
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/system | /dev/block/mmcblk0p50 | Size: 2975MB Used: 1691MB Free: 1284MB Backup Size: 1691MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_Available_in_GUI IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p50
+   Display_Name: System
+   Storage_Name: System
+   Backup_Path: /system
+   Backup_Name: system
+   Backup_Display_Name: System
+   Storage_Path: /system
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/system_image | /dev/block/mmcblk0p50 | Size: 3072MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p50
+   Display_Name: System Image
+   Storage_Name: system_image
+   Backup_Path: /system_image
+   Backup_Name: system_image
+   Backup_Display_Name: System Image
+   Storage_Path: /system_image
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/data | /dev/block/mmcblk0p52 | Size: 0MB
+   Flags: Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Can_Be_Encrypted Is_Encrypted Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
+   Symlink_Path: /data/media
+   Symlink_Mount_Point: /sdcard
+   Primary_Block_Device: /dev/block/mmcblk0p52
+   Length: -16384
+   Display_Name: data
+   Storage_Name: Internal Storage
+   Backup_Path: /data
+   Backup_Name: data
+   Backup_Display_Name: Data
+   Storage_Path: /data/media
+   Current_File_System: emmc
+   Fstab_File_System: ext4
+   Backup_Method: dd
+   MTP_Storage_ID: 65537
+
+/cache | /dev/block/mmcblk0p51 | Size: 247MB Used: 0MB Free: 247MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p51
+   Display_Name: Cache
+   Storage_Name: Cache
+   Backup_Path: /cache
+   Backup_Name: cache
+   Backup_Display_Name: Cache
+   Storage_Path: /cache
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/recovery | /dev/block/mmcblk0p45 | Size: 40MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p45
+   Display_Name: Recovery
+   Storage_Name: recovery
+   Backup_Path: /recovery
+   Backup_Name: recovery
+   Backup_Display_Name: Recovery
+   Storage_Path: /recovery
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/efs1 | /dev/block/mmcblk0p18 | Size: 1MB
+   Flags: Can_Be_Backed_Up Has_SubPartition IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p18
+   Display_Name: EFS
+   Storage_Name: EFS
+   Backup_Path: /efs1
+   Backup_Name: efs1
+   Backup_Display_Name: EFS
+   Storage_Path: /efs1
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/efs2 | /dev/block/mmcblk0p19 | Size: 1MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /efs1
+   Primary_Block_Device: /dev/block/mmcblk0p19
+   Display_Name: efs2
+   Storage_Name: efs2
+   Backup_Path: /efs2
+   Backup_Name: efs2
+   Backup_Display_Name: efs2
+   Storage_Path: /efs2
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/securefs | /dev/block/mmcblk0p34 | Size: 3MB Used: 0MB Free: 3MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p34
+   Display_Name: securefs
+   Storage_Name: securefs
+   Backup_Path: /securefs
+   Backup_Name: securefs
+   Backup_Display_Name: securefs
+   Storage_Path: /securefs
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/BBSYS | /dev/block/mmcblk0p39 | Size: 3MB Used: 1MB Free: 2MB Backup Size: 1MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p39
+   Display_Name: BBSYS
+   Storage_Name: BBSYS
+   Backup_Path: /BBSYS
+   Backup_Name: BBSYS
+   Backup_Display_Name: BBSYS
+   Storage_Path: /BBSYS
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/misc | /dev/block/mmcblk0p33 | Size: 1MB
+   Flags: IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p33
+   Display_Name: misc
+   Storage_Name: misc
+   Backup_Path: /misc
+   Backup_Name: misc
+   Backup_Display_Name: misc
+   Storage_Path: /misc
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/usb-otg |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Removable Is_Storage 
+   Primary_Block_Device: /dev/block/sda1
+   Alternate_Block_Device: /dev/block/sda
+   Display_Name: USB-OTG
+   Storage_Name: USB-OTG
+   Backup_Path: /usb-otg
+   Backup_Name: usb-otg
+   Backup_Display_Name: USB-OTG
+   Storage_Path: /usb-otg
+   Current_File_System: vfat
+   Fstab_File_System: vfat
+   Backup_Method: files
+   MTP_Storage_ID: 65538
+
+I:Loading package: TWRP (/twres/ui.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/uk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/tr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sv.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ru.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pt_BR.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/nl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/it.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/hu.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/fr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/es.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/el.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/de.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/cz.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+parsing languageFile
+parsing languageFile done
+I:PageManager::LoadFileToBuffer loading filename: '/twres/ui.xml' directly
+I:Checking resolution...
+I:Loading resources...
+I:Failed to load image from indeterminate013, error -1
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Including file: /twres/portrait.xml...
+I:PageManager::LoadFileToBuffer loading filename: '/twres/portrait.xml' directly
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page main
+I:Loading page main2
+I:Loading page install
+I:Loading page flash_confirm
+I:Loading page flash_zip
+I:Loading page flash_done
+I:Loading page flash_sleep_and_reboot
+I:Loading page flashimage_confirm
+I:Loading page clear_vars
+I:Loading page reboot_system_routine
+I:Loading page confirm_action
+I:Loading page action_page
+I:Loading page singleaction_page
+I:Loading page action_complete
+I:Loading page filecheck
+I:Loading page rebootcheck
+I:Loading page appcheck
+I:Loading page wipe
+I:Loading page advancedwipe
+I:Loading page formatdata
+I:Loading page formatdata_confirm
+I:Loading page checkpartitionlist
+I:Loading page partitionoptions
+I:Loading page refreshfilesystem
+I:Loading page selectfilesystem
+I:Loading page backup
+I:Loading page backup_options
+I:Loading page backupname1
+I:Loading page backupname2
+I:Loading page backupencryption
+I:Loading page backupencryption2
+I:Loading page checkbackuppassword
+I:Loading page backup_run
+I:Loading page restore
+I:Unable to open '/data/media/TWRP/BACKUPS/NBQGLMB630302015'
+I:Loading page restore_read
+I:Loading page restore_decrypt
+I:Loading page try_restore_decrypt
+I:Loading page restore_select
+I:Loading page renamebackup
+I:Loading page restore_run
+I:Loading page mount
+I:Loading page usb_mount
+I:Loading page usb_umount
+I:Loading page system_readonly_check
+I:Loading page reboot
+I:Loading page rebootapp
+I:Loading page system_readonly
+I:Loading page settings
+I:Loading page settings_timezone
+I:Loading page settings_screen
+I:Loading page settings_vibration
+I:Loading page settings_language
+I:Loading page copylog
+I:Loading page advanced
+I:Loading page partsdcardsel
+I:Loading page partsdcardcheck
+I:Loading page partsdcard
+I:Loading page htcdumlock
+I:Loading page lock
+I:Loading page filemanagerlist
+I:Loading page filemanageroptions
+I:Loading page choosedestinationfolder
+I:Loading page filemanagerrenamefile
+I:Loading page filemanagerrenamefolder
+I:Loading page filemanagerchmod
+I:Loading page filemanagerconfirm
+I:Loading page filemanageraction
+I:Loading page decrypt
+I:Loading page decrypt_pattern
+I:Loading page trydecrypt
+I:Loading page terminalcommand
+I:Loading page sideload
+I:Loading page fixcontexts
+I:Loading page installsu
+I:Loading page slideout
+I:Loading page select_storage
+I:Loading page select_language
+I:Set page: 'decrypt_pattern'
+I:Switching packages (TWRP)
+SELinux contexts loaded from /file_contexts
+Full SELinux support is present.
+Startup Commands: 
+pm.dexopt.boot=verify-at-runtime
+pm.dexopt.ab-ota=speed-profile
+pm.dexopt.install=interpret-only
+pm.dexopt.core-app=speed
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.first-boot=verify-at-runtime
+pm.dexopt.shared-apk=speed
+pm.dexopt.nsys-library=speed
+pm.dexopt.forced-dexopt=speed
+ro.com.google.clientidbase=android-google
+ro.com.android.dataroaming=true
+ro.com.android.wifi-watchlist=GoogleGuest
+ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
+ro.boot.mode=1
+ro.boot.device=nbq
+ro.boot.console=ttyHSL0
+ro.boot.baseband=msm
+ro.boot.hardware=qcom
+ro.boot.serialno=NBQGLMB630302015
+ro.boot.bootdevice=f9824900.sdhci
+ro.boot.veritymode=enforcing
+ro.boot.verifiedbootstate=orange
+ro.omni.device=ether
+ro.omni.version=7.1.1-20170406-ether-HOMEMADE
+ro.twrp.boot=1
+ro.twrp.version=3.1.0-0
+ro.wifi.channels=
+ro.allow.mock.location=1
+ro.board.platform=msm8992
+ro.build.id=N4F26T
+ro.build.date=Thu Apr  6 15:11:09 PDT 2017
+ro.build.date.utc=0
+ro.build.host=fengbox
+ro.build.tags=test-keys
+ro.build.type=eng
+ro.build.user=zhaofeng
+ro.build.flavor=omni_ether-eng
+ro.build.display.id=omni_ether-eng 7.1.1 N4F26T eng.zhaofe.20170406.151109 test-keys
+ro.build.product=ether
+ro.build.version.sdk=25
+ro.build.version.base_os=
+ro.build.version.release=7.1.1
+ro.build.version.codename=REL
+ro.build.version.incremental=eng.zhaofe.20170406.151109
+ro.build.version.preview_sdk=0
+ro.build.version.all_codenames=REL
+ro.build.version.security_patch=2017-03-05
+ro.build.description=omni_ether-eng 7.1.1 N4F26T eng.zhaofe.20170406.151109 test-keys
+ro.build.fingerprint=Nextbit/omni_ether/ether:7.1.1/N4F26T/zhaofe04061511:eng/test-keys
+ro.build.characteristics=default
+ro.config.ringtone=omni_ringtone1.ogg
+ro.config.alarm_alert=omni_alarm1.ogg
+ro.config.notification_sound=omni_notification1.ogg
+ro.dalvik.vm.native.bridge=0
+ro.kernel.android.checkjni=1
+ro.secure=0
+ro.zygote=zygote32
+ro.carrier=unknown
+ro.product.cpu.abi=arm64-v8a
+ro.product.cpu.abilist=armeabi-v7a,armeabi
+ro.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.product.cpu.abilist64=
+ro.product.name=omni_ether
+ro.product.board=MSM8992
+ro.product.brand=Nextbit
+ro.product.model=Robin
+ro.product.device=ether
+ro.product.locale=en-US
+ro.product.manufacturer=Nextbit
+ro.baseband=msm
+ro.bootmode=1
+ro.hardware=qcom
+ro.revision=0
+ro.serialno=NBQGLMB630302015
+ro.bootimage.build.date=Thu Apr 6 15:11:09 PDT 2017
+ro.bootimage.build.date.utc=1491516669
+ro.bootimage.build.fingerprint=Nextbit/omni_ether/ether:7.1.1/N4F26T/zhaofe04061511:eng/test-keys
+ro.bootloader=unknown
+ro.debuggable=1
+ro.modversion=OmniROM-7.1.1-20170406-ether-HOMEMADE
+ro.setupwizard.enterprise_mode=1
+net.bt.name=Android
+net.change=net.bt.name
+sys.usb.ffs.ready=1
+init.svc.adbd=running
+init.svc.logd=running
+init.svc.healthd=running
+init.svc.ueventd=running
+init.svc.recovery=running
+init.svc.logd-reinit=stopped
+init.svc.set_permissive=stopped
+twrp.crash_counter=0
+twrp.action_complete=0
+debug.atrace.tags.enableflags=0
+dalvik.vm.isa.arm.variant=generic
+dalvik.vm.isa.arm.features=default
+dalvik.vm.isa.arm64.variant=generic
+dalvik.vm.isa.arm64.features=default
+dalvik.vm.usejit=true
+dalvik.vm.lockprof.threshold=500
+dalvik.vm.dex2oat-Xms=64m
+dalvik.vm.dex2oat-Xmx=512m
+dalvik.vm.appimageformat=lz4
+dalvik.vm.usejitprofiles=true
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
+dalvik.vm.image-dex2oat-Xms=64m
+dalvik.vm.image-dex2oat-Xmx=64m
+dalvik.vm.image-dex2oat-filter=verify-at-runtime
+persist.sys.usb.config=adb
+persist.sys.dalvik.vm.lib.2=libart.so
+persist.sys.root_access=1
+service.adb.root=1
+keyguard.no_require_sim=true
+
+I:Copying file /cache/recovery/log to /cache/recovery/last_log
+I:Is encrypted, do decrypt page first
+I:Switching packages (TWRP)
+I:Set page: 'decrypt'
+I:Set page: 'decrypt_pattern'
+I:Set page: 'trydecrypt'
+I:operation_start: 'Decrypt'
+crypt_ftr->fs_size = 53239743
+Using scrypt with keymaster for cryptfs KDF
+keymaster module name is Keymaster QTI HAL
+keymaster version is 256
+Found keymaster1 module, using keymaster1 API.
+Signing safely-padded object
+Enabling support for allow_discards in dmcrypt.
+load_crypto_mapping_table: target_type = crypt
+load_crypto_mapping_table: real_blk_name = /dev/block/mmcblk0p52, extra_params = 1 allow_discards
+22
+22
+22
+22
+22
+22
+22
+22
+22
+22
+Cannot load dm-crypt mapping table.
+Error creating decrypted block device
+crypt_ftr->fs_size = 53239743
+Using scrypt with keymaster for cryptfs KDF
+keymaster module name is Keymaster QTI HAL
+keymaster version is 256
+Found keymaster1 module, using keymaster1 API.
+Signing safely-padded object
+Cannot create dm-crypt device 16
+Error creating decrypted block device
+TW_CRYPTO_USE_SYSTEM_VOLD := true
+Attempting to use system's vold for decryption...
+Stop service sbinqseecomd: stopped.
+Setting up folders and permissions...
+I:Is_Mounted: Unable to find partition for path '/vendor'
+Symlinking vendor folder...
+I:Is_Mounted: Unable to find partition for path '/firmware'
+Symlinking firmware folder...
+Symlinking firmware files...
+0 file(s) symlinked.
+Starting services...
+Start service sys_qseecomd: running.
+Start service sys_vold: running.
+About to run vdc...
+Retrying connection to vold
+Connected to vold (213 386 pattern ret=5452)
+vdc cryptfs result (passwd): 200 392 -1  (ret=0)
+vdc cryptfs result (hex_pw): 200 399 1  (ret=0)
+Decryption failed
+Stopping services...
+Stop service sys_vold: stopped.
+Stop service sys_qseecomd: stopped.
+Failed to unmount '/system' (Device or resource busy)
+WARNING: system could not be unmounted normally!
+I:umount -l /system process ended with RC=0
+Finished.
+Start service sbinqseecomd: running.
+---- DMESG LOG FOLLOWS ----
+<3>[    2.094031] QSEECOM: qseecom_probe: qseecom.qsee_version = 0x800000
+<4>[    2.094122] QSEECOM: qseecom_probe: disk-encrypt-pipe-pair=0x2
+<4>[    2.094133] QSEECOM: qseecom_probe: Device does not support PFEQSEECOM: qseecom_probe: qsee-ce-hw-instance=0x0
+<6>[    2.094157] QSEECOM: qseecom_probe: qseecom.appsbl_qseecom_support = 0x1QSEECOM: qseecom_probe: no-clock-support=0x1
+<4>[    2.094462] QSEECOM: qseecom_probe: qseecom.whitelist_support = 0
+<13>[    6.829449] init: (Parsing /init.recovery.vold_decrypt.qseecomd.rc took 0.00s.)
+<13>[    6.829472] init: (Parsing /init.recovery.vold_decrypt.rc took 0.00s.)
+<13>[   21.503374] init: Starting service 'sbinqseecomd'...
+<6>[   21.528119] warning: `qseecomd' uses 32-bit capabilities (legacy support in use)
+<38>[   21.531973] type=1400 audit(28493696.589:40): avc: denied { read write } for pid=350 comm="qseecomd" name="qseecom" dev="tmpfs" ino=12327 scontext=u:r:recovery:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+<38>[   21.532314] type=1400 audit(28493696.589:41): avc: denied { open } for pid=350 comm="qseecomd" path="/dev/qseecom" dev="tmpfs" ino=12327 scontext=u:r:recovery:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+<38>[   21.532810] type=1400 audit(28493696.589:42): avc: denied { ioctl } for pid=350 comm="qseecomd" path="/dev/qseecom" dev="tmpfs" ino=12327 ioctlcmd=970a scontext=u:r:recovery:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+<3>[   21.546646] QSEECOM: qseecom_query_app_loaded: App id 3 (keymaster) already exists
+<3>[   23.623811] QSEECOM: qseecom_query_app_loaded: App id 3 (keymaster) already exists
+<38>[   23.641146] type=1400 audit(28493698.699:43): avc: denied { sys_rawio } for pid=351 comm="qseecomd" capability=17 scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=capability permissive=1
+<3>[   30.747222] QSEECOM: qseecom_query_app_loaded: App id 3 (keymaster) already exists
+<12>[   32.530140] [VOLD_DECRYPT]TW_CRYPTO_USE_SYSTEM_VOLD := true
+<12>[   32.530172] [VOLD_DECRYPT]Attempting to use system's vold for decryption...
+<12>[   32.535790] [VOLD_DECRYPT]Starting strace_init (pid=361)
+<12>[   32.536567] [VOLD_DECRYPT]waiting for init.svc.sbinqseecomd to change from 'running' to 'stopped'
+<13>[   32.536805] init: Service 'sbinqseecomd' is being killed...
+<4>[   32.537127] qseecomd (351) used greatest stack depth: 10888 bytes left
+<13>[   32.539581] init: Service 'sbinqseecomd' (pid 349) killed by signal 9
+<12>[   32.736810] [VOLD_DECRYPT]Stop service sbinqseecomd: stopped.
+<12>[   32.736854] [VOLD_DECRYPT]Setting up folders and permissions...
+<12>[   32.737080] [VOLD_DECRYPT]Symlinking vendor folder...
+<12>[   32.737662] [VOLD_DECRYPT]Symlinking /system/vendor/lib64 to /vendor/lib64 (res=0)
+<12>[   32.737737] [VOLD_DECRYPT]Symlinking /system/vendor/lib to /vendor/lib (res=0)
+<12>[   32.740037] [VOLD_DECRYPT]Symlinking firmware folder...
+<12>[   32.742082] [VOLD_DECRYPT]Symlinking firmware files...
+<12>[   33.197104] [VOLD_DECRYPT]0 file(s) symlinked.
+<12>[   33.198906] [VOLD_DECRYPT]Starting services...
+<12>[   33.200830] [VOLD_DECRYPT]waiting for init.svc.sys_qseecomd to change from 'error' to 'running'
+<13>[   33.234094] init: Starting service 'sys_qseecomd'...
+<38>[   33.242426] type=1400 audit(28493708.299:63): avc: denied { read } for pid=366 comm="qseecomd" path="/dev/__properties__" dev="tmpfs" ino=1775 scontext=u:r:tee:s0 tcontext=u:object_r:properties_device:s0 tclass=file permissive=1
+<38>[   33.257083] type=1400 audit(28493708.309:68): avc: denied { getattr } for pid=366 comm="qseecomd" path="/dev/__properties__" dev="tmpfs" ino=1775 scontext=u:r:tee:s0 tcontext=u:object_r:properties_device:s0 tclass=file permissive=1
+<12>[   33.401131] [VOLD_DECRYPT]Start service sys_qseecomd: running.
+<12>[   33.403694] [VOLD_DECRYPT]waiting for init.svc.sys_vold to change from 'error' to 'running'
+<13>[   33.406292] init: Starting service 'sys_vold'...
+<38>[   33.577864] type=1400 audit(28493708.629:88): avc: denied { write } for pid=368 comm="qseecomd" name="property_service" dev="tmpfs" ino=1784 scontext=u:r:tee:s0 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=1
+<38>[   33.578076] type=1400 audit(28493708.629:89): avc: denied { connectto } for pid=368 comm="qseecomd" path="/dev/socket/property_service" scontext=u:r:tee:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+<3>[   33.591530] QSEECOM: qseecom_query_app_loaded: App id 3 (keymaster) already exists
+<12>[   33.603868] [VOLD_DECRYPT]Start service sys_vold: running.
+<12>[   33.603907] [VOLD_DECRYPT]About to run vdc...
+<38>[   33.877725] type=1400 audit(28493708.929:92): avc: denied { write } for pid=377 comm="vdc" name="cryptd" dev="tmpfs" ino=9809 scontext=u:r:recovery:s0 tcontext=u:object_r:vold_socket:s0 tclass=sock_file permissive=1
+<38>[   33.882320] type=1400 audit(28493708.939:93): avc: denied { read } for pid=361 comm="strace" name="3" dev="proc" ino=11660 scontext=u:r:recovery:s0 tcontext=u:r:vold:s0 tclass=lnk_file permissive=1
+<12>[   34.723190] [VOLD_DECRYPT]Retrying connection to vold
+<38>[   35.169231] type=1400 audit(28493710.229:94): avc: denied { connectto } for pid=386 comm="vdc" path="/dev/socket/cryptd" scontext=u:r:recovery:s0 tcontext=u:r:vold:s0 tclass=unix_stream_socket permissive=1
+<38>[   35.172932] type=1400 audit(28493710.229:95): avc: denied { read write } for pid=382 comm="vold" name="mmcblk0p52" dev="tmpfs" ino=1983 scontext=u:r:vold:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+<38>[   35.173506] type=1400 audit(28493710.229:96): avc: denied { open } for pid=382 comm="vold" path="/dev/block/mmcblk0p52" dev="tmpfs" ino=1983 scontext=u:r:vold:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+<38>[   35.173604] type=1400 audit(28493710.229:97): avc: denied { ioctl } for pid=382 comm="vold" path="/dev/block/mmcblk0p52" dev="tmpfs" ino=1983 ioctlcmd=1260 scontext=u:r:vold:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+<38>[   35.174034] type=1400 audit(28493710.229:98): avc: denied { getattr } for pid=382 comm="vold" path="/dev/block/mmcblk0p52" dev="tmpfs" ino=1983 scontext=u:r:vold:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+<12>[   36.032840] [VOLD_DECRYPT]Connected to vold (213 386 pattern ret=5452)
+<38>[   37.372465] type=1400 audit(28493712.429:99): avc: denied { read write } for pid=382 comm="vold" name="qseecom" dev="tmpfs" ino=12327 scontext=u:r:vold:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+<38>[   37.372794] type=1400 audit(28493712.429:100): avc: denied { open } for pid=382 comm="vold" path="/dev/qseecom" dev="tmpfs" ino=12327 scontext=u:r:vold:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+<38>[   37.372900] type=1400 audit(28493712.429:101): avc: denied { ioctl } for pid=382 comm="vold" path="/dev/qseecom" dev="tmpfs" ino=12327 ioctlcmd=970a scontext=u:r:vold:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+<3>[   37.380783] QSEECOM: qseecom_query_app_loaded: App id 3 (keymaster) already exists
+<3>[   38.901576] QSEECOM: __qseecom_process_incomplete_cmd: fail:resp res= -65,app_id = 0,lstr = 12288
+<12>[   40.160420] [VOLD_DECRYPT]vdc cryptfs result (passwd): 200 392 -1  (ret=0)
+<3>[   41.496644] QSEECOM: qseecom_query_app_loaded: App id 3 (keymaster) already exists
+<38>[   43.371106] type=1400 audit(28493718.429:102): avc: denied { ioctl } for pid=369 comm="qseecomd" path="/dev/block/mmcblk0rpmb" dev="tmpfs" ino=1813 ioctlcmd=b300 scontext=u:r:tee:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+<38>[   43.371843] type=1400 audit(28493718.429:103): avc: denied { sys_rawio } for pid=369 comm="qseecomd" capability=17 scontext=u:r:tee:s0 tcontext=u:r:tee:s0 tclass=capability permissive=1
+<3>[   43.400472] QSEECOM: __qseecom_process_incomplete_cmd: fail:resp res= -71,app_id = 0,lstr = 12288
+<3>[   43.400492] QSEECOM: __qseecom_set_clear_ce_key: process_incomplete_cmd FAILED, resp.result -71
+<3>[   43.400502] QSEECOM: qseecom_create_key: Failed to create key: pipe 2, ce 1: -22
+<3>[   43.400517] QSEECOM: qseecom_ioctl: failed to create encryption key: -22
+<12>[   44.270863] [VOLD_DECRYPT]vdc cryptfs result (hex_pw): 200 399 1  (ret=0)
+<12>[   44.270906] [VOLD_DECRYPT]Decryption failed
+<12>[   44.270927] [VOLD_DECRYPT]Stopping services...
+<12>[   44.272743] [VOLD_DECRYPT]waiting for init.svc.sys_vold to change from 'running' to 'stopped'
+<13>[   44.273200] init: Service 'sys_vold' is being killed...
+<13>[   44.281042] init: Service 'sys_vold' (pid 367) killed by signal 9
+<12>[   44.473041] [VOLD_DECRYPT]Stop service sys_vold: stopped.
+<12>[   44.476601] [VOLD_DECRYPT]waiting for init.svc.sys_qseecomd to change from 'running' to 'stopped'
+<13>[   44.477173] init: Service 'sys_qseecomd' is being killed...
+<13>[   44.483988] init: Service 'sys_qseecomd' (pid 366) killed by signal 9
+<12>[   44.676833] [VOLD_DECRYPT]Stop service sys_qseecomd: stopped.
+<12>[   44.684692] [VOLD_DECRYPT]WARNING: system could not be unmounted normally!
+<12>[   44.723581] [VOLD_DECRYPT]Finished.
+<12>[   44.725353] [VOLD_DECRYPT]waiting for init.svc.sbinqseecomd to change from 'stopped' to 'running'
+<13>[   44.725976] init: Starting service 'sbinqseecomd'...
+<12>[   44.925523] [VOLD_DECRYPT]Start service sbinqseecomd: running.
+<12>[   44.925553] [VOLD_DECRYPT]Stopping strace_init (pid=361)
+<3>[   44.933644] QSEECOM: qseecom_query_app_loaded: App id 3 (keymaster) already exists
+<12>[   45.925959] [VOLD_DECRYPT]strace_init terminated successfully
+---- DMESG LOG ENDS ----
+I:echo "---- DMESG LOG FOLLOWS ----";dmesg | grep 'DECRYPT\|vold\|qseecom\|QSEECOM\|keymaste\|keystore\|cmnlib';echo "---- DMESG LOG ENDS ----" process ended with RC=0
+Failed to decrypt data.
+I:Set page: 'decrypt'
+I:Set page: 'decrypt_pattern'
+I:operation_end - status=1
+I:Set overlay: 'slideout'

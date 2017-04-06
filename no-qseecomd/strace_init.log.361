@@ -1,0 +1,14 @@
+18:45:54.925134 futex(0x7f8910e4d0, FUTEX_WAIT_BITSET_PRIVATE, 2, NULL, ffffffff) = 0
+18:45:54.925443 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f895ee000
+18:45:54.925598 mprotect(0x7f895ee000, 4096, PROT_NONE) = 0
+18:45:54.925853 sigaltstack({ss_sp=0x7f895ef000, ss_flags=0, ss_size=16384}, NULL) = 0
+18:45:54.926006 prctl(0x53564d41 /* PR_??? */, 0, 0x7f895ef000, 16384, "thread signal stack") = 0
+18:45:54.926252 prctl(0x53564d41 /* PR_??? */, 0, 0x7f895ee000, 4096, "thread signal stack guard page") = 0
+18:45:54.926509 ioctl(7</dev/qseecom>, _IOC(0, 0x97, 0x05, 0x00), 0x5000) = 0
+18:45:58.822357 ioctl(5</dev/block/mmcblk0rpmb>, _IOC(_IOC_READ|_IOC_WRITE, 0xb3, 0x00, 0xd8), 0x7f8910e268) = 0
+18:45:58.828058 ioctl(7</dev/qseecom>, _IOC(0, 0x97, 0x06, 0x00), 0x10) = 0
+18:45:58.828378 ioctl(7</dev/qseecom>, _IOC(0, 0x97, 0x05, 0x00), 0x5000) = 0
+18:45:58.839911 ioctl(5</dev/block/mmcblk0rpmb>, _IOC(_IOC_READ|_IOC_WRITE, 0xb3, 0x00, 0xd8), 0x7f8910e268) = 0
+18:45:58.841735 ioctl(7</dev/qseecom>, _IOC(0, 0x97, 0x06, 0x00), 0x10) = 0
+18:45:58.842003 ioctl(7</dev/qseecom>, _IOC(0, 0x97, 0x05, 0x00) <unfinished ...>
+18:46:01.800340 +++ killed by SIGKILL +++

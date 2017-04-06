@@ -1,0 +1,8 @@
+18:45:54.994682 futex(0x7f889de4d0, FUTEX_WAIT_BITSET_PRIVATE, 2, NULL, ffffffff) = 0
+18:45:54.995040 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f895a6000
+18:45:54.995236 mprotect(0x7f895a6000, 4096, PROT_NONE) = 0
+18:45:54.995487 sigaltstack({ss_sp=0x7f895a7000, ss_flags=0, ss_size=16384}, NULL) = 0
+18:45:54.995689 prctl(0x53564d41 /* PR_??? */, 0, 0x7f895a7000, 16384, "thread signal stack") = 0
+18:45:54.995917 prctl(0x53564d41 /* PR_??? */, 0, 0x7f895a6000, 4096, "thread signal stack guard page") = 0
+18:45:54.996201 ioctl(17</dev/qseecom>, _IOC(0, 0x97, 0x05, 0x00) <unfinished ...>
+18:46:01.800129 +++ killed by SIGKILL +++
